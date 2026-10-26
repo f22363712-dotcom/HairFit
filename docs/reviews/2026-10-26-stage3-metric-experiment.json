@@ -1,0 +1,53 @@
+{
+  "kind": "synthetic fixed-aim metric experiment, common current temporal policy",
+  "results": {
+    "projected": {
+      "rigidTrials": 196,
+      "falseCuts": 34,
+      "positiveTrials": 54,
+      "positiveCuts": 54,
+      "firstFailure": {
+        "pitch": -65,
+        "yaw": -85,
+        "perspective": false,
+        "nonplanar": false
+      }
+    },
+    "affine": {
+      "rigidTrials": 196,
+      "falseCuts": 8,
+      "positiveTrials": 54,
+      "positiveCuts": 54,
+      "firstFailure": {
+        "pitch": -30,
+        "yaw": 35,
+        "perspective": false,
+        "nonplanar": true
+      }
+    },
+    "world": {
+      "rigidTrials": 196,
+      "falseCuts": 0,
+      "positiveTrials": 54,
+      "positiveCuts": 54,
+      "firstFailure": null
+    },
+    "camera": {
+      "rigidTrials": 196,
+      "falseCuts": 0,
+      "positiveTrials": 54,
+      "positiveCuts": 54,
+      "firstFailure": null
+    }
+  },
+  "modestContraction": {
+    "0.5": {
+      "firstClosedSnip": false,
+      "heldClosedSnip": false
+    },
+    "0.65": {
+      "firstClosedSnip": false,
+      "heldClosedSnip": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+node_modules/
+dist/
+test-assets/
+.playwright-mcp/
+*.png
+!public/models/head-skin.png
+!public/models/head-eyes.png
+
+/devpost/learner-profile.md
+
+.env
+.env.*
+!.env.example
+
+/logs/
+
+# The local proof-of-concept reconstruction is part of the public demo.
+!test-assets/
+!test-assets/tripo-proof/
+!test-assets/tripo-proof/**

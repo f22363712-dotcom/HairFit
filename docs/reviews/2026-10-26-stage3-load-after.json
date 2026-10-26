@@ -1,0 +1,30 @@
+{
+  "time": "2026-10-26T20:45:46.9521277+08:00",
+  "gpu": [
+    {
+      "Name": "pid_14976_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 4
+    },
+    {
+      "Name": "pid_1520_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 4
+    },
+    {
+      "Name": "pid_24952_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 12
+    },
+    {
+      "Name": "pid_25624_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 1
+    },
+    {
+      "Name": "pid_4508_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 7
+    },
+    {
+      "Name": "pid_4_luid_0x00000000_0x00010773_phys_0_eng_4_engtype_Copy",
+      "UtilizationPercentage": 1
+    }
+  ],
+  "cpu": 98
+}

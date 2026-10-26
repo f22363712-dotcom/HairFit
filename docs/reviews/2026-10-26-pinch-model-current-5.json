@@ -1,0 +1,69 @@
+[
+  {
+    "screenGap": 2.1424351610564054,
+    "cameraGap": 2.126935297108355,
+    "worldGap": 2.038090783306302,
+    "indexReachWorld": 1.8631742229271984,
+    "image": "victory.jpg",
+    "detectedHand": true,
+    "pinchPose": true,
+    "intentArmed": true,
+    "metric": "screen",
+    "gap": 2.1424351610564054,
+    "inferenceMs": 27.19999998807907,
+    "pass": true
+  },
+  {
+    "screenGap": 0.4581145500275425,
+    "cameraGap": 0.5162459819229857,
+    "worldGap": 1.288487507039857,
+    "indexReachWorld": 1.1781518848524786,
+    "image": "pinch-cc0.jpg",
+    "detectedHand": true,
+    "pinchPose": true,
+    "intentArmed": false,
+    "metric": "screen",
+    "gap": 0.4581145500275425,
+    "inferenceMs": 26.599999994039536,
+    "pass": true
+  },
+  {
+    "indexReachWorld": null,
+    "image": "pinch-keys.jpg",
+    "detectedHand": false,
+    "pinchPose": false,
+    "intentArmed": false,
+    "metric": null,
+    "gap": null,
+    "inferenceMs": 20.700000017881393,
+    "pass": false
+  },
+  {
+    "screenGap": 1.115045231812339,
+    "cameraGap": 1.1132471484362139,
+    "worldGap": 1.4638060866927356,
+    "indexReachWorld": 1.0950926163210737,
+    "image": "thumbs_up.jpg",
+    "detectedHand": true,
+    "pinchPose": false,
+    "intentArmed": false,
+    "metric": "screen",
+    "gap": 1.115045231812339,
+    "inferenceMs": 22.400000005960464,
+    "pass": true
+  },
+  {
+    "screenGap": 1.1242430532241934,
+    "cameraGap": 1.1190256138464403,
+    "worldGap": 1.1062110252494288,
+    "indexReachWorld": 0.8265674162191882,
+    "image": "thumbs_down.jpg",
+    "detectedHand": true,
+    "pinchPose": false,
+    "intentArmed": false,
+    "metric": "screen",
+    "gap": 1.1242430532241934,
+    "inferenceMs": 21.69999998807907,
+    "pass": true
+  }
+]

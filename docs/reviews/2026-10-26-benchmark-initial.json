@@ -1,0 +1,132 @@
+[
+  {
+    "delegate": "GPU",
+    "sceneOn": false,
+    "inputWidth": 320,
+    "inputHeight": 320,
+    "samples": 12,
+    "usable": 6,
+    "detected": 12,
+    "validPose": 6,
+    "totalMs": {
+      "p50": 248.8,
+      "p95": 302.8,
+      "max": 311.5
+    },
+    "inferenceMs": {
+      "p50": 240.5,
+      "p95": 295.7,
+      "max": 297
+    },
+    "bitmapMs": {
+      "p50": 3.1,
+      "p95": 15,
+      "max": 19.2
+    },
+    "otherMs": {
+      "p50": 1.1,
+      "p95": 2.2,
+      "max": 2.7
+    },
+    "canvas": null
+  },
+  {
+    "delegate": "CPU",
+    "sceneOn": false,
+    "inputWidth": 320,
+    "inputHeight": 320,
+    "samples": 12,
+    "usable": 3,
+    "detected": 12,
+    "validPose": 3,
+    "totalMs": {
+      "p50": 257.5,
+      "p95": 313.1,
+      "max": 339.3
+    },
+    "inferenceMs": {
+      "p50": 251,
+      "p95": 305.5,
+      "max": 325.2
+    },
+    "bitmapMs": {
+      "p50": 4.5,
+      "p95": 8.6,
+      "max": 12.8
+    },
+    "otherMs": {
+      "p50": 1.2,
+      "p95": 2.5,
+      "max": 4.2
+    },
+    "canvas": null
+  },
+  {
+    "delegate": "GPU",
+    "sceneOn": true,
+    "inputWidth": 320,
+    "inputHeight": 320,
+    "samples": 12,
+    "usable": 0,
+    "detected": 12,
+    "validPose": 0,
+    "totalMs": {
+      "p50": 486.8,
+      "p95": 802.6,
+      "max": 845.8
+    },
+    "inferenceMs": {
+      "p50": 478.6,
+      "p95": 798.7,
+      "max": 842.6
+    },
+    "bitmapMs": {
+      "p50": 7.2,
+      "p95": 13,
+      "max": 18.2
+    },
+    "otherMs": {
+      "p50": 1,
+      "p95": 16.2,
+      "max": 20.3
+    },
+    "canvas": {
+      "width": 1363,
+      "height": 778
+    }
+  },
+  {
+    "delegate": "CPU",
+    "sceneOn": true,
+    "inputWidth": 320,
+    "inputHeight": 320,
+    "samples": 12,
+    "usable": 3,
+    "detected": 12,
+    "validPose": 3,
+    "totalMs": {
+      "p50": 265.6,
+      "p95": 302.4,
+      "max": 303.3
+    },
+    "inferenceMs": {
+      "p50": 261.6,
+      "p95": 297.4,
+      "max": 298.3
+    },
+    "bitmapMs": {
+      "p50": 3.3,
+      "p95": 7.9,
+      "max": 7.9
+    },
+    "otherMs": {
+      "p50": 1.1,
+      "p95": 1.8,
+      "max": 4.8
+    },
+    "canvas": {
+      "width": 1363,
+      "height": 778
+    }
+  }
+]

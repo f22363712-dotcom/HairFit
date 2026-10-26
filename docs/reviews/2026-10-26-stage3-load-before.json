@@ -1,0 +1,22 @@
+{
+  "cpu": 58,
+  "gpu": [
+    {
+      "Name": "pid_14976_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 1
+    },
+    {
+      "Name": "pid_1520_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 2
+    },
+    {
+      "Name": "pid_25624_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 1
+    },
+    {
+      "Name": "pid_4508_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 7
+    }
+  ],
+  "time": "2026-10-26T20:44:55.3270879+08:00"
+}

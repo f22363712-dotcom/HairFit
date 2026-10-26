@@ -1,0 +1,23 @@
+{
+  "sampledAtUtc": "2026-10-26T15:57:27.2722685Z",
+  "totalCpuPercent": 38,
+  "freeMemoryKB": 1416864,
+  "gpu": [
+    {
+      "Name": "pid_1448_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 1
+    },
+    {
+      "Name": "pid_1520_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 33
+    },
+    {
+      "Name": "pid_25624_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 1
+    },
+    {
+      "Name": "pid_4508_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 8
+    }
+  ]
+}

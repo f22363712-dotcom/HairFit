@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-10-27T02:02:09.1970061+08:00",
+  "provider": "Tripo direct V3",
+  "operation": "GET /account/balance",
+  "credentialPresent": true,
+  "credentialSource": "chat workspace .env",
+  "variableName": "Tripo_API_KEY",
+  "httpStatus": 401,
+  "providerCode": 2,
+  "apiBalance": "unknown",
+  "generationTaskCreated": false,
+  "inputTokens": "unknown",
+  "outputTokens": "unknown",
+  "totalTokens": "unknown",
+  "cacheHit": "unknown",
+  "studioCreditsUsableForApi": false,
+  "sources": [
+    "https://www.tripo3d.ai/help/api-plugins/tripo-studiotripo-api",
+    "https://developers.tripo3d.ai/en/docs/account",
+    "https://developers.tripo3d.ai/en/docs/authentication",
+    "https://developers.tripo3d.ai/en/pricing"
+  ]
+}

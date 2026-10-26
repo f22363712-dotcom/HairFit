@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-10-26T18:08:38.551Z",
+  "region": "cn",
+  "httpStatus": 200,
+  "balance": 0,
+  "frozen": 0,
+  "generationTaskCreated": false,
+  "usage": {
+    "time": "2026-10-26T18:08:38.530Z",
+    "provider": "Tripo direct V3",
+    "region": "cn",
+    "model": "v3.1-20260211",
+    "operation": "balance",
+    "taskId": null,
+    "httpStatus": 200,
+    "code": 0,
+    "latencyMs": 1064,
+    "success": true,
+    "inputTokens": "unknown",
+    "outputTokens": "unknown",
+    "totalTokens": "unknown",
+    "cacheHit": "unknown",
+    "cachedInputTokens": "unknown",
+    "creditsConsumed": "unknown",
+    "creditsAccounting": "per-task snapshot; never sum repeated queries",
+    "taskStatus": "unknown",
+    "logSaved": true
+  }
+}

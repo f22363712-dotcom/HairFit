@@ -1,0 +1,15 @@
+{
+  "health": {
+    "status": 200,
+    "body": {
+      "ok": true,
+      "model": "qwen-image-3.0-pro"
+    }
+  },
+  "validation": {
+    "status": 500,
+    "body": {
+      "error": "需要个人照片和理想发型图片"
+    }
+  }
+}

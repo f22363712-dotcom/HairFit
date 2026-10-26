@@ -1,0 +1,41 @@
+{
+  "provider": "microsoft/TRELLIS.2",
+  "paidService": false,
+  "stages": [
+    {
+      "time": "2026-10-26T17:35:00.236835+00:00",
+      "model": "TRELLIS.2-4B",
+      "provider": "HuggingFace ZeroGPU official Microsoft Space",
+      "stage": "image_to_3d",
+      "inputTokens": "unknown",
+      "outputTokens": "unknown",
+      "totalTokens": "unknown",
+      "cacheHit": "unknown",
+      "cachedInputTokens": "unknown",
+      "latencyMs": 28496,
+      "success": true,
+      "inputImages": 1,
+      "outputModels": "unknown"
+    },
+    {
+      "time": "2026-10-26T17:35:04.569108+00:00",
+      "model": "TRELLIS.2-4B",
+      "provider": "HuggingFace ZeroGPU official Microsoft Space",
+      "stage": "extract_glb",
+      "inputTokens": "unknown",
+      "outputTokens": "unknown",
+      "totalTokens": "unknown",
+      "cacheHit": "unknown",
+      "cachedInputTokens": "unknown",
+      "latencyMs": 4330,
+      "success": false,
+      "inputImages": "unknown",
+      "outputModels": "unknown"
+    }
+  ],
+  "source": "existing-generated-public-stock-portrait",
+  "modelAccepted": false,
+  "preparedImage": "C:\\Users\\20651\\AppData\\Local\\Temp\\hairfit-trellis-proof\\head-alpha.png",
+  "errorStage": "extract_glb",
+  "error": "You have exceeded your ZeroGPU quota (120s requested vs. 167s left). Try again in 23:59:35. Authenticate with a Hugging Face token for more quota - https://huggingface.co/settings/tokens"
+}

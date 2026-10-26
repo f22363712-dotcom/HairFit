@@ -1,0 +1,42 @@
+[
+  {
+    "image": "victory.jpg",
+    "detectedHand": true,
+    "scissorsPose": true,
+    "intentArmed": true,
+    "metric": "screen",
+    "gap": 1.1280684421615266,
+    "inferenceMs": 55.3999999910593,
+    "pass": true
+  },
+  {
+    "image": "thumbs_up.jpg",
+    "detectedHand": true,
+    "scissorsPose": false,
+    "intentArmed": false,
+    "metric": "screen",
+    "gap": 0.2724316184331788,
+    "inferenceMs": 85.70000000298023,
+    "pass": true
+  },
+  {
+    "image": "thumbs_down.jpg",
+    "detectedHand": true,
+    "scissorsPose": false,
+    "intentArmed": false,
+    "metric": "screen",
+    "gap": 0.2817687104474091,
+    "inferenceMs": 56.19999998807907,
+    "pass": true
+  },
+  {
+    "image": "pointing_up.jpg",
+    "detectedHand": true,
+    "scissorsPose": false,
+    "intentArmed": false,
+    "metric": "screen",
+    "gap": 2.115153640384359,
+    "inferenceMs": 70.20000000298023,
+    "pass": true
+  }
+]

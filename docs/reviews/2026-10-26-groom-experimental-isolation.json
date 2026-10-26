@@ -1,0 +1,49 @@
+{
+  "draws": 2,
+  "cpuRenderMs": 1032.2999999523163,
+  "flyingFragments": 0,
+  "landedFragments": 0,
+  "width": 1009,
+  "height": 539,
+  "pixelRatio": 1.5,
+  "hairGeometry": {
+    "profile": "round-groom-experiment",
+    "experimental": true,
+    "segments": 24,
+    "verticesPerPoint": 3,
+    "strands": 7580,
+    "triangles": 1091520,
+    "referenceBakes": 1,
+    "groomId": "hairfit-ideal-swept-c-v1"
+  },
+  "appearance": {
+    "source": "generated",
+    "status": "ready",
+    "skinReady": true,
+    "eyesReady": true,
+    "skinFailed": false,
+    "eyesFailed": false,
+    "useSkin": 1,
+    "skinBase": [
+      0.6375968739867731,
+      0.4232676699760063,
+      0.31854677811435356
+    ],
+    "scalpRoot": [
+      0.008293048451848346,
+      0.004391442035325718,
+      0.0019729253929411765
+    ],
+    "mapPresent": true,
+    "nativeMap": true,
+    "imageReady": true,
+    "imageWidth": 2048,
+    "imageHeight": 2048,
+    "colorSpace": "srgb",
+    "textureVersion": 1,
+    "rendererTextureCount": 4,
+    "uniformSamplerMatchesNative": true,
+    "gpuDebugEnabled": false,
+    "gpu": null
+  }
+}

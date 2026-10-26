@@ -1,0 +1,55 @@
+{
+  "scenes": 1,
+  "nodes": [
+    {
+      "name": "tripo_part_0",
+      "mesh": 0
+    },
+    {
+      "name": "tripo_part_1",
+      "mesh": 1
+    },
+    {
+      "name": "tripo_part_2",
+      "mesh": 2
+    },
+    {
+      "name": "tripo_part_3",
+      "mesh": 3
+    },
+    {
+      "name": "tripo_part_4",
+      "mesh": 4
+    },
+    {
+      "name": "tripo_part_5",
+      "mesh": 5
+    }
+  ],
+  "meshes": [
+    {
+      "name": "tripo_mesh_0",
+      "primitives": 1
+    },
+    {
+      "name": "tripo_mesh_1",
+      "primitives": 1
+    },
+    {
+      "name": "tripo_mesh_2",
+      "primitives": 1
+    },
+    {
+      "name": "tripo_mesh_3",
+      "primitives": 1
+    },
+    {
+      "name": "tripo_mesh_4",
+      "primitives": 1
+    },
+    {
+      "name": "tripo_mesh_5",
+      "primitives": 1
+    }
+  ]
+}

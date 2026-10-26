@@ -1,0 +1,79 @@
+{
+  "checks": [
+    {
+      "backdrop": [
+        14,
+        20,
+        17
+      ],
+      "baseMaxError": 103,
+      "baseMeanError": 0.112265625,
+      "layer": {
+        "baseDraws": 1,
+        "height": 480,
+        "overlayDraws": 1,
+        "samples": 4,
+        "visibleSpans": 5,
+        "width": 640
+      },
+      "name": "front with hair, head, floor and segment-interior occlusion",
+      "originalMatched": 1,
+      "originalPixels": 957,
+      "projectedMatched": 1,
+      "projectedPixels": 958
+    },
+    {
+      "backdrop": [
+        14,
+        20,
+        17
+      ],
+      "baseMaxError": 103,
+      "baseMeanError": 0.10416666666666669,
+      "layer": {
+        "baseDraws": 2,
+        "height": 480,
+        "overlayDraws": 2,
+        "samples": 4,
+        "visibleSpans": 5,
+        "width": 640
+      },
+      "name": "orbit perspective",
+      "originalMatched": 1,
+      "originalPixels": 1553,
+      "projectedMatched": 1,
+      "projectedPixels": 1341
+    },
+    {
+      "backdrop": [
+        14,
+        20,
+        17
+      ],
+      "baseMaxError": 103,
+      "baseMeanError": 0.1525352733686067,
+      "layer": {
+        "baseDraws": 3,
+        "height": 360,
+        "overlayDraws": 3,
+        "samples": 4,
+        "visibleSpans": 5,
+        "width": 420
+      },
+      "name": "resize",
+      "originalMatched": 1,
+      "originalPixels": 1121,
+      "projectedMatched": 1,
+      "projectedPixels": 966
+    },
+    {
+      "name": "reset clears settled and flying segments",
+      "pass": true
+    },
+    {
+      "name": "camera off restores GL path",
+      "pass": true
+    }
+  ],
+  "status": "通过 5 项"
+}

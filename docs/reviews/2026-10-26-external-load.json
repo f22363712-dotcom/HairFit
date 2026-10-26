@@ -1,0 +1,20 @@
+{
+  "recordedAt": "2026-10-26T10:12:58.818174+00:00",
+  "method": "PowerShell Get-CimInstance Win32_PerfFormattedData_PerfOS_Processor and GPUPerformanceCounters_GPUEngine; Get-Process IDs",
+  "observed": {
+    "totalCpuPercent": 75,
+    "gpu3D": [
+      {
+        "process": "League of Legends",
+        "utilizationPercent": 80
+      },
+      {
+        "process": "msedge",
+        "utilizationPercent": 8
+      }
+    ],
+    "cpu": "AMD Ryzen 7 5800H"
+  },
+  "interpretation": "Substantial external CPU/GPU contention was present after benchmark cases. Earlier cases were not accompanied by system-load measurements; no exact per-case cause is established. None of the confounded performance variants is accepted.",
+  "next": "User asked asynchronously to report computer idle after game. Do not stop unrelated processes. Re-run actual default production path with low external load before Task2 acceptance."
+}

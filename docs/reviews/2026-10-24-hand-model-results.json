@@ -1,0 +1,34 @@
+[
+  {
+    "image": "victory.jpg",
+    "detectedHand": true,
+    "scissorsPose": true,
+    "gap": 1.1946776437509143,
+    "inferenceMs": 60.80000000074506,
+    "pass": true
+  },
+  {
+    "image": "thumbs_up.jpg",
+    "detectedHand": true,
+    "scissorsPose": false,
+    "gap": 0.37117569274357015,
+    "inferenceMs": 57.899999998509884,
+    "pass": true
+  },
+  {
+    "image": "thumbs_down.jpg",
+    "detectedHand": true,
+    "scissorsPose": false,
+    "gap": 0.3076486627399232,
+    "inferenceMs": 60.80000000074506,
+    "pass": true
+  },
+  {
+    "image": "pointing_up.jpg",
+    "detectedHand": true,
+    "scissorsPose": false,
+    "gap": 1.8254945560986122,
+    "inferenceMs": 58.899999998509884,
+    "pass": true
+  }
+]

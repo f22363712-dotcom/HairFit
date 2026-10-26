@@ -1,0 +1,1419 @@
+{
+  "report": {
+    "rows": [
+      {
+        "capture": "default",
+        "cuts": [
+          {
+            "affectedStrands": 40,
+            "durationMs": 49.099999994039536,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 14.299999982118608,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 15,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.5,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.800000011920927,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12.900000005960464,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 15,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.400000005960464,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.699999988079073,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 11.599999994039536,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 11.900000005960464,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.100000023841858,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.300000011920927,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.399999976158142,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 13.700000017881392,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 14.400000005960464,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          }
+        ],
+        "delegate": "GPU",
+        "detected": 64,
+        "drawHz": 30.168012624236432,
+        "elapsedMs": 4309.199999988079,
+        "focused": true,
+        "frames": [
+          {
+            "bitmapMs": 5.699999988079071,
+            "deliveryMs": 4,
+            "detected": true,
+            "inferenceMs": 60.19999998807907,
+            "latencyMs": 69.89999997615814,
+            "stale": false,
+            "workerRoundTripMs": 64.19999998807907
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 1.1999999582767489,
+            "detected": true,
+            "inferenceMs": 43.10000002384186,
+            "latencyMs": 44.79999998211861,
+            "stale": false,
+            "workerRoundTripMs": 44.29999998211861
+          },
+          {
+            "bitmapMs": 1.600000023841858,
+            "deliveryMs": 0.4999999701976776,
+            "detected": true,
+            "inferenceMs": 18.700000017881393,
+            "latencyMs": 20.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 19.19999998807907
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 0.4999999701976776,
+            "detected": true,
+            "inferenceMs": 28.400000005960464,
+            "latencyMs": 29.399999976158146,
+            "stale": false,
+            "workerRoundTripMs": 28.899999976158146
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 19.599999994039536,
+            "latencyMs": 20.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 20.200000017881393
+          },
+          {
+            "bitmapMs": 0.699999988079071,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 19.5,
+            "latencyMs": 20.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 20.100000023841854
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 4.199999988079071,
+            "detected": true,
+            "inferenceMs": 15,
+            "latencyMs": 20,
+            "stale": false,
+            "workerRoundTripMs": 19.19999998807907
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 20,
+            "latencyMs": 21.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 20.600000023841854
+          },
+          {
+            "bitmapMs": 1.0999999940395355,
+            "deliveryMs": 4.5,
+            "detected": true,
+            "inferenceMs": 29,
+            "latencyMs": 34.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 33.5
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 25,
+            "latencyMs": 26.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 25.5
+          },
+          {
+            "bitmapMs": 2.300000011920929,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 19.099999994039536,
+            "latencyMs": 22,
+            "stale": false,
+            "workerRoundTripMs": 19.599999994039536
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.4999999701976776,
+            "detected": true,
+            "inferenceMs": 17.100000023841858,
+            "latencyMs": 19.299999982118607,
+            "stale": false,
+            "workerRoundTripMs": 17.599999994039536
+          },
+          {
+            "bitmapMs": 1.600000023841858,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 17.19999998807907,
+            "latencyMs": 19.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 17.599999994039536
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 16.69999998807907,
+            "latencyMs": 18.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 17.099999994039536
+          },
+          {
+            "bitmapMs": 1.7999999821186066,
+            "deliveryMs": 0.40000003576278687,
+            "detected": true,
+            "inferenceMs": 20.399999976158146,
+            "latencyMs": 22.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 20.80000001192093
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 19.5,
+            "latencyMs": 21.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 19.900000005960464
+          },
+          {
+            "bitmapMs": 1.800000011920929,
+            "deliveryMs": 0.800000011920929,
+            "detected": true,
+            "inferenceMs": 23.299999982118607,
+            "latencyMs": 25.900000005960464,
+            "stale": false,
+            "workerRoundTripMs": 24.099999994039536
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 21.400000005960464,
+            "latencyMs": 23.5,
+            "stale": false,
+            "workerRoundTripMs": 21.900000005960464
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 18,
+            "latencyMs": 20.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 18.400000005960464
+          },
+          {
+            "bitmapMs": 2.300000011920929,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 20,
+            "latencyMs": 22.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 20.399999976158146
+          },
+          {
+            "bitmapMs": 2.7999999821186066,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 22.099999994039536,
+            "latencyMs": 25.399999976158146,
+            "stale": false,
+            "workerRoundTripMs": 22.599999994039536
+          },
+          {
+            "bitmapMs": 2.0999999940395355,
+            "deliveryMs": 0.7000000178813934,
+            "detected": true,
+            "inferenceMs": 22.5,
+            "latencyMs": 25.30000001192093,
+            "stale": false,
+            "workerRoundTripMs": 23.200000017881393
+          },
+          {
+            "bitmapMs": 1.899999976158142,
+            "deliveryMs": 1.2000000178813934,
+            "detected": true,
+            "inferenceMs": 21.900000005960464,
+            "latencyMs": 25,
+            "stale": false,
+            "workerRoundTripMs": 23.100000023841854
+          },
+          {
+            "bitmapMs": 3.4000000059604645,
+            "deliveryMs": 0.29999998211860657,
+            "detected": true,
+            "inferenceMs": 22.200000017881393,
+            "latencyMs": 25.900000005960464,
+            "stale": false,
+            "workerRoundTripMs": 22.5
+          },
+          {
+            "bitmapMs": 2.4000000059604645,
+            "deliveryMs": 0.29999998211860657,
+            "detected": true,
+            "inferenceMs": 20.5,
+            "latencyMs": 23.19999998807907,
+            "stale": false,
+            "workerRoundTripMs": 20.799999982118607
+          },
+          {
+            "bitmapMs": 2,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 20.30000001192093,
+            "latencyMs": 22.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 20.69999998807907
+          },
+          {
+            "bitmapMs": 1.199999988079071,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 17.599999994039536,
+            "latencyMs": 19.30000001192093,
+            "stale": false,
+            "workerRoundTripMs": 18.100000023841854
+          },
+          {
+            "bitmapMs": 1.7999999821186066,
+            "deliveryMs": 1.0000000298023224,
+            "detected": true,
+            "inferenceMs": 16.19999998807907,
+            "latencyMs": 19,
+            "stale": false,
+            "workerRoundTripMs": 17.200000017881393
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 14,
+            "latencyMs": 15.200000017881392,
+            "stale": false,
+            "workerRoundTripMs": 14.400000005960464
+          },
+          {
+            "bitmapMs": 0.7000000178813934,
+            "deliveryMs": 1.300000011920929,
+            "detected": true,
+            "inferenceMs": 16.599999994039536,
+            "latencyMs": 18.600000023841854,
+            "stale": false,
+            "workerRoundTripMs": 17.900000005960464
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 1.7000000178813934,
+            "detected": true,
+            "inferenceMs": 17,
+            "latencyMs": 19.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 18.700000017881393
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 14,
+            "latencyMs": 15,
+            "stale": false,
+            "workerRoundTripMs": 14.400000005960464
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.29999998211860657,
+            "detected": true,
+            "inferenceMs": 14.5,
+            "latencyMs": 15.399999976158142,
+            "stale": false,
+            "workerRoundTripMs": 14.799999982118608
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 0.7999999523162842,
+            "detected": true,
+            "inferenceMs": 22.100000023841854,
+            "latencyMs": 23.5,
+            "stale": false,
+            "workerRoundTripMs": 22.899999976158146
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 0.9999999701976776,
+            "detected": true,
+            "inferenceMs": 15.800000011920927,
+            "latencyMs": 17.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 16.799999982118607
+          },
+          {
+            "bitmapMs": 0.8999999761581421,
+            "deliveryMs": 2.2000000178813934,
+            "detected": true,
+            "inferenceMs": 16.400000005960464,
+            "latencyMs": 19.600000023841854,
+            "stale": false,
+            "workerRoundTripMs": 18.600000023841854
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 13.100000023841858,
+            "latencyMs": 14.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 13.5
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.9000000059604645,
+            "detected": true,
+            "inferenceMs": 17.599999994039536,
+            "latencyMs": 19.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 18.5
+          },
+          {
+            "bitmapMs": 0.7999999821186066,
+            "deliveryMs": 0.800000011920929,
+            "detected": true,
+            "inferenceMs": 17.19999998807907,
+            "latencyMs": 18.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 18
+          },
+          {
+            "bitmapMs": 1,
+            "deliveryMs": 1.7999999821186066,
+            "detected": true,
+            "inferenceMs": 15,
+            "latencyMs": 17.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 16.799999982118607
+          },
+          {
+            "bitmapMs": 0.9000000059604645,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 13.099999994039536,
+            "latencyMs": 14.5,
+            "stale": false,
+            "workerRoundTripMs": 13.599999994039536
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 1.699999988079071,
+            "detected": true,
+            "inferenceMs": 15.700000017881392,
+            "latencyMs": 18.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 17.400000005960464
+          },
+          {
+            "bitmapMs": 1.0999999940395355,
+            "deliveryMs": 0.7999999821186066,
+            "detected": true,
+            "inferenceMs": 18.30000001192093,
+            "latencyMs": 20.19999998807907,
+            "stale": false,
+            "workerRoundTripMs": 19.099999994039536
+          },
+          {
+            "bitmapMs": 0.699999988079071,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 18.80000001192093,
+            "latencyMs": 20,
+            "stale": false,
+            "workerRoundTripMs": 19.30000001192093
+          },
+          {
+            "bitmapMs": 0.6000000238418579,
+            "deliveryMs": 1.2999999821186066,
+            "detected": true,
+            "inferenceMs": 15.800000011920927,
+            "latencyMs": 17.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 17.099999994039536
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 22.599999994039536,
+            "latencyMs": 23.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 23.100000023841854
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 2.100000023841858,
+            "detected": true,
+            "inferenceMs": 16.69999998807907,
+            "latencyMs": 19.600000023841854,
+            "stale": false,
+            "workerRoundTripMs": 18.80000001192093
+          },
+          {
+            "bitmapMs": 1.199999988079071,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 27.599999994039536,
+            "latencyMs": 29.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 28.200000017881393
+          },
+          {
+            "bitmapMs": 2.600000023841858,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 19.099999994039536,
+            "latencyMs": 22.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 19.599999994039536
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 19.799999982118607,
+            "latencyMs": 21.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 20.400000005960464
+          },
+          {
+            "bitmapMs": 1.2999999821186066,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 21.799999982118607,
+            "latencyMs": 23.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 22.30000001192093
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.30000001192092896,
+            "detected": true,
+            "inferenceMs": 18.900000005960464,
+            "latencyMs": 20.900000005960464,
+            "stale": false,
+            "workerRoundTripMs": 19.200000017881393
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.20000004768371585,
+            "detected": true,
+            "inferenceMs": 19.899999976158146,
+            "latencyMs": 21.900000005960464,
+            "stale": false,
+            "workerRoundTripMs": 20.100000023841854
+          },
+          {
+            "bitmapMs": 1.300000011920929,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 19.700000017881393,
+            "latencyMs": 21.5,
+            "stale": false,
+            "workerRoundTripMs": 20.099999994039536
+          },
+          {
+            "bitmapMs": 1.2999999821186066,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 19.19999998807907,
+            "latencyMs": 20.899999976158146,
+            "stale": false,
+            "workerRoundTripMs": 19.599999994039536
+          },
+          {
+            "bitmapMs": 1.2000000178813934,
+            "deliveryMs": 0.30000001192092896,
+            "detected": true,
+            "inferenceMs": 18.19999998807907,
+            "latencyMs": 19.700000017881393,
+            "stale": false,
+            "workerRoundTripMs": 18.5
+          },
+          {
+            "bitmapMs": 1.2999999821186066,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 21,
+            "latencyMs": 22.899999976158146,
+            "stale": false,
+            "workerRoundTripMs": 21.599999994039536
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.5999999642372131,
+            "detected": true,
+            "inferenceMs": 22.700000017881393,
+            "latencyMs": 24.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 23.299999982118607
+          },
+          {
+            "bitmapMs": 3.800000011920929,
+            "deliveryMs": 0.4999999701976776,
+            "detected": true,
+            "inferenceMs": 26.200000017881393,
+            "latencyMs": 30.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 26.69999998807907
+          },
+          {
+            "bitmapMs": 2.699999988079071,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 26.099999994039536,
+            "latencyMs": 29.30000001192093,
+            "stale": false,
+            "workerRoundTripMs": 26.600000023841854
+          },
+          {
+            "bitmapMs": 3.7999999821186066,
+            "deliveryMs": 0.800000011920929,
+            "detected": true,
+            "inferenceMs": 28.69999998807907,
+            "latencyMs": 34.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 29.5
+          },
+          {
+            "bitmapMs": 2.2000000178813934,
+            "deliveryMs": 0.699999988079071,
+            "detected": true,
+            "inferenceMs": 22.099999994039536,
+            "latencyMs": 25,
+            "stale": false,
+            "workerRoundTripMs": 22.799999982118607
+          },
+          {
+            "bitmapMs": 2.2000000178813934,
+            "deliveryMs": 0.29999998211860657,
+            "detected": true,
+            "inferenceMs": 23.900000005960464,
+            "latencyMs": 26.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 24.19999998807907
+          },
+          {
+            "bitmapMs": 2,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 18.80000001192093,
+            "latencyMs": 21.5,
+            "stale": false,
+            "workerRoundTripMs": 19.400000005960464
+          }
+        ],
+        "fresh": 64,
+        "mode": "falling",
+        "model": "full",
+        "overlayHz": 0,
+        "p95Ms": 34.599999994039536,
+        "path": "production scene with explicit scheduler and capture options + actual worker",
+        "pump": null,
+        "reporting": "buffered-after-case",
+        "requestedDelegate": "AUTO",
+        "scene": {
+          "cpuRenderMs": 711.1000002920628,
+          "draws": 133,
+          "flyingFragments": 40,
+          "height": 479,
+          "landedFragments": 0,
+          "pixelRatio": 1,
+          "width": 1134
+        },
+        "sdk": "current",
+        "source": "video",
+        "usableHz": 14.851944676547166,
+        "visibility": "visible"
+      },
+      {
+        "capture": "default",
+        "cuts": [
+          {
+            "affectedStrands": 40,
+            "durationMs": 40.69999998807907,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 14.199999988079073,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 16.80000001192093,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 14.799999982118608,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12.600000023841858,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 11.599999994039536,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12.699999988079073,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12.199999988079073,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12.199999988079073,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 11.699999988079073,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 10.900000005960464,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 11.800000011920927,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 9.099999994039536,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 12.399999976158142,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          },
+          {
+            "affectedStrands": 40,
+            "durationMs": 10.800000011920927,
+            "fallingSegments": 161,
+            "removedSegments": 130.759765625
+          }
+        ],
+        "delegate": "GPU",
+        "detected": 64,
+        "drawHz": 29.987082487626285,
+        "elapsedMs": 4335.199999988079,
+        "focused": true,
+        "frames": [
+          {
+            "bitmapMs": 2.4000000059604645,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 47.900000005960464,
+            "latencyMs": 50.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 48.400000005960464
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 47.5,
+            "latencyMs": 48.70000001788139,
+            "stale": false,
+            "workerRoundTripMs": 48.10000002384186
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 25.599999994039536,
+            "latencyMs": 27.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 26.099999994039536
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 22.900000005960464,
+            "latencyMs": 25.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 23.5
+          },
+          {
+            "bitmapMs": 2.0999999940395355,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 20.900000005960464,
+            "latencyMs": 23.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 21.5
+          },
+          {
+            "bitmapMs": 2.199999988079071,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 35.80000001192093,
+            "latencyMs": 38.5,
+            "stale": false,
+            "workerRoundTripMs": 36.19999998807907
+          },
+          {
+            "bitmapMs": 2.199999988079071,
+            "deliveryMs": 1.0999999940395355,
+            "detected": true,
+            "inferenceMs": 22.400000005960464,
+            "latencyMs": 25.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 23.5
+          },
+          {
+            "bitmapMs": 3.900000005960465,
+            "deliveryMs": 0.9000000059604645,
+            "detected": true,
+            "inferenceMs": 33.599999994039536,
+            "latencyMs": 38.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 34.5
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 1.2999999821186066,
+            "detected": true,
+            "inferenceMs": 31.700000017881393,
+            "latencyMs": 33.599999994039536,
+            "stale": false,
+            "workerRoundTripMs": 33
+          },
+          {
+            "bitmapMs": 8.099999994039536,
+            "deliveryMs": 1.2000000178813934,
+            "detected": true,
+            "inferenceMs": 40.099999994039536,
+            "latencyMs": 49.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 41.30000001192093
+          },
+          {
+            "bitmapMs": 1,
+            "deliveryMs": 1.800000011920929,
+            "detected": true,
+            "inferenceMs": 24,
+            "latencyMs": 26.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 25.80000001192093
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 2.7000000178813934,
+            "detected": true,
+            "inferenceMs": 16.299999982118607,
+            "latencyMs": 20.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 19
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 0.800000011920929,
+            "detected": true,
+            "inferenceMs": 27.5,
+            "latencyMs": 29.100000023841854,
+            "stale": false,
+            "workerRoundTripMs": 28.30000001192093
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 24.19999998807907,
+            "latencyMs": 25.399999976158146,
+            "stale": false,
+            "workerRoundTripMs": 24.799999982118607
+          },
+          {
+            "bitmapMs": 2.100000023841858,
+            "deliveryMs": 1.2999999821186066,
+            "detected": true,
+            "inferenceMs": 32.30000001192093,
+            "latencyMs": 35.70000001788139,
+            "stale": false,
+            "workerRoundTripMs": 33.599999994039536
+          },
+          {
+            "bitmapMs": 0.800000011920929,
+            "deliveryMs": 1,
+            "detected": true,
+            "inferenceMs": 17.399999976158142,
+            "latencyMs": 19.299999982118607,
+            "stale": false,
+            "workerRoundTripMs": 18.399999976158146
+          },
+          {
+            "bitmapMs": 0.7999999821186066,
+            "deliveryMs": 0.7999999821186066,
+            "detected": true,
+            "inferenceMs": 20.700000017881393,
+            "latencyMs": 22.299999982118607,
+            "stale": false,
+            "workerRoundTripMs": 21.5
+          },
+          {
+            "bitmapMs": 0.5999999940395355,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 13.900000005960464,
+            "latencyMs": 15.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 14.5
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 2.2000000178813934,
+            "detected": true,
+            "inferenceMs": 17.299999982118607,
+            "latencyMs": 20,
+            "stale": false,
+            "workerRoundTripMs": 19.5
+          },
+          {
+            "bitmapMs": 0.6000000238418579,
+            "deliveryMs": 0.9999999701976776,
+            "detected": true,
+            "inferenceMs": 106.7000000178814,
+            "latencyMs": 108.30000001192091,
+            "stale": false,
+            "workerRoundTripMs": 107.69999998807909
+          },
+          {
+            "bitmapMs": 0.5,
+            "deliveryMs": 0.29999998211860657,
+            "detected": true,
+            "inferenceMs": 34.70000001788139,
+            "latencyMs": 35.5,
+            "stale": false,
+            "workerRoundTripMs": 35
+          },
+          {
+            "bitmapMs": 2.199999988079071,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 25.400000005960464,
+            "latencyMs": 28,
+            "stale": false,
+            "workerRoundTripMs": 25.80000001192093
+          },
+          {
+            "bitmapMs": 1.899999976158142,
+            "deliveryMs": 0.30000004172325134,
+            "detected": true,
+            "inferenceMs": 23.799999982118607,
+            "latencyMs": 26,
+            "stale": false,
+            "workerRoundTripMs": 24.100000023841854
+          },
+          {
+            "bitmapMs": 2.699999988079071,
+            "deliveryMs": 1.100000023841858,
+            "detected": true,
+            "inferenceMs": 27.099999994039536,
+            "latencyMs": 30.900000005960464,
+            "stale": false,
+            "workerRoundTripMs": 28.200000017881393
+          },
+          {
+            "bitmapMs": 2.2999999821186066,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 19.900000005960464,
+            "latencyMs": 22.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 20.5
+          },
+          {
+            "bitmapMs": 4.0999999940395355,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 22.900000005960464,
+            "latencyMs": 27.5,
+            "stale": false,
+            "workerRoundTripMs": 23.400000005960464
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 18.19999998807907,
+            "latencyMs": 20.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 18.599999994039536
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 21.099999994039536,
+            "latencyMs": 23.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 21.700000017881393
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 21.30000001192093,
+            "latencyMs": 23.19999998807907,
+            "stale": false,
+            "workerRoundTripMs": 21.69999998807907
+          },
+          {
+            "bitmapMs": 1.7000000178813934,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 23,
+            "latencyMs": 25.30000001192093,
+            "stale": false,
+            "workerRoundTripMs": 23.599999994039536
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 18.399999976158146,
+            "latencyMs": 20.30000001192093,
+            "stale": false,
+            "workerRoundTripMs": 18.900000005960464
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 19,
+            "latencyMs": 21,
+            "stale": false,
+            "workerRoundTripMs": 19.5
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 21.30000001192093,
+            "latencyMs": 23.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 21.69999998807907
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.40000003576278687,
+            "detected": true,
+            "inferenceMs": 18.299999982118607,
+            "latencyMs": 20.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 18.700000017881393
+          },
+          {
+            "bitmapMs": 1.2999999821186066,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 26.5,
+            "latencyMs": 28.19999998807907,
+            "stale": false,
+            "workerRoundTripMs": 26.900000005960464
+          },
+          {
+            "bitmapMs": 1.199999988079071,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 18.19999998807907,
+            "latencyMs": 20,
+            "stale": false,
+            "workerRoundTripMs": 18.80000001192093
+          },
+          {
+            "bitmapMs": 1.800000011920929,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 20.19999998807907,
+            "latencyMs": 22.600000023841854,
+            "stale": false,
+            "workerRoundTripMs": 20.80000001192093
+          },
+          {
+            "bitmapMs": 1.7999999821186066,
+            "deliveryMs": 0.30000001192092896,
+            "detected": true,
+            "inferenceMs": 19.69999998807907,
+            "latencyMs": 21.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 20
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 20.599999994039536,
+            "latencyMs": 22.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 21
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 18.599999994039536,
+            "latencyMs": 20.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 19.099999994039536
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 18.900000005960464,
+            "latencyMs": 20.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 19.299999982118607
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 20.80000001192093,
+            "latencyMs": 23,
+            "stale": false,
+            "workerRoundTripMs": 21.30000001192093
+          },
+          {
+            "bitmapMs": 1.7999999821186066,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 20.299999982118607,
+            "latencyMs": 22.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 20.900000005960464
+          },
+          {
+            "bitmapMs": 2.2999999821186066,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 20,
+            "latencyMs": 22.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 20.5
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 23,
+            "latencyMs": 25.19999998807907,
+            "stale": false,
+            "workerRoundTripMs": 23.5
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 20.599999994039536,
+            "latencyMs": 22.5,
+            "stale": false,
+            "workerRoundTripMs": 21
+          },
+          {
+            "bitmapMs": 1.699999988079071,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 25.299999982118607,
+            "latencyMs": 27.5,
+            "stale": false,
+            "workerRoundTripMs": 25.80000001192093
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 21,
+            "latencyMs": 23.099999994039536,
+            "stale": false,
+            "workerRoundTripMs": 21.5
+          },
+          {
+            "bitmapMs": 1.600000023841858,
+            "deliveryMs": 0.3999999761581421,
+            "detected": true,
+            "inferenceMs": 20.5,
+            "latencyMs": 22.5,
+            "stale": false,
+            "workerRoundTripMs": 20.899999976158146
+          },
+          {
+            "bitmapMs": 1.4000000059604645,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 19,
+            "latencyMs": 20.80000001192093,
+            "stale": false,
+            "workerRoundTripMs": 19.400000005960464
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 21.299999982118607,
+            "latencyMs": 23.400000005960464,
+            "stale": false,
+            "workerRoundTripMs": 21.80000001192093
+          },
+          {
+            "bitmapMs": 1.7000000178813934,
+            "deliveryMs": 1,
+            "detected": true,
+            "inferenceMs": 25.5,
+            "latencyMs": 28.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 26.5
+          },
+          {
+            "bitmapMs": 3.2999999821186066,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 20.80000001192093,
+            "latencyMs": 24.69999998807907,
+            "stale": false,
+            "workerRoundTripMs": 21.400000005960464
+          },
+          {
+            "bitmapMs": 2.5999999940395355,
+            "deliveryMs": 0.699999988079071,
+            "detected": true,
+            "inferenceMs": 26.900000005960464,
+            "latencyMs": 30.19999998807907,
+            "stale": false,
+            "workerRoundTripMs": 27.599999994039536
+          },
+          {
+            "bitmapMs": 1.899999976158142,
+            "deliveryMs": 0.9000000059604645,
+            "detected": true,
+            "inferenceMs": 23,
+            "latencyMs": 25.799999982118607,
+            "stale": false,
+            "workerRoundTripMs": 23.900000005960464
+          },
+          {
+            "bitmapMs": 2,
+            "deliveryMs": 0.5999999940395355,
+            "detected": true,
+            "inferenceMs": 24.400000005960464,
+            "latencyMs": 27.100000023841854,
+            "stale": false,
+            "workerRoundTripMs": 25
+          },
+          {
+            "bitmapMs": 2.100000023841858,
+            "deliveryMs": 0.699999988079071,
+            "detected": true,
+            "inferenceMs": 18.599999994039536,
+            "latencyMs": 21.5,
+            "stale": false,
+            "workerRoundTripMs": 19.299999982118607
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 21.099999994039536,
+            "latencyMs": 23.200000017881393,
+            "stale": false,
+            "workerRoundTripMs": 21.600000023841854
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.5,
+            "detected": true,
+            "inferenceMs": 19.19999998807907,
+            "latencyMs": 21.299999982118607,
+            "stale": false,
+            "workerRoundTripMs": 19.69999998807907
+          },
+          {
+            "bitmapMs": 1.7000000178813934,
+            "deliveryMs": 0.699999988079071,
+            "detected": true,
+            "inferenceMs": 30.30000001192093,
+            "latencyMs": 32.70000001788139,
+            "stale": false,
+            "workerRoundTripMs": 31
+          },
+          {
+            "bitmapMs": 2.5999999940395355,
+            "deliveryMs": 0.5000000298023224,
+            "detected": true,
+            "inferenceMs": 21.399999976158146,
+            "latencyMs": 24.5,
+            "stale": false,
+            "workerRoundTripMs": 21.900000005960464
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.6000000238418579,
+            "detected": true,
+            "inferenceMs": 18.799999982118607,
+            "latencyMs": 21,
+            "stale": false,
+            "workerRoundTripMs": 19.400000005960464
+          },
+          {
+            "bitmapMs": 1.5999999940395355,
+            "deliveryMs": 0.4000000059604645,
+            "detected": true,
+            "inferenceMs": 18.900000005960464,
+            "latencyMs": 20.900000005960464,
+            "stale": false,
+            "workerRoundTripMs": 19.30000001192093
+          },
+          {
+            "bitmapMs": 1.5,
+            "deliveryMs": 0.40000003576278687,
+            "detected": true,
+            "inferenceMs": 24.19999998807907,
+            "latencyMs": 26.100000023841854,
+            "stale": false,
+            "workerRoundTripMs": 24.600000023841854
+          }
+        ],
+        "fresh": 64,
+        "mode": "falling",
+        "model": "full",
+        "overlayHz": 0,
+        "p95Ms": 48.70000001788139,
+        "path": "production scene with explicit scheduler and capture options + actual worker",
+        "pump": null,
+        "reporting": "buffered-after-case",
+        "requestedDelegate": "AUTO",
+        "scene": {
+          "cpuRenderMs": 636.5999998152256,
+          "draws": 133,
+          "flyingFragments": 40,
+          "height": 479,
+          "landedFragments": 0,
+          "pixelRatio": 1,
+          "width": 1134
+        },
+        "sdk": "current",
+        "source": "video",
+        "usableHz": 14.762871378523707,
+        "visibility": "visible"
+      }
+    ]
+  },
+  "status": "完成"
+}

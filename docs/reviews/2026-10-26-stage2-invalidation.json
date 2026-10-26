@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "name": "initial textures draw and idle scene stops",
+      "pass": true
+    },
+    {
+      "name": "clay appearance",
+      "pass": true
+    },
+    {
+      "name": "asynchronous photo appearance",
+      "pass": true
+    },
+    {
+      "name": "new hair archetype",
+      "pass": true
+    },
+    {
+      "name": "real cut emits falling geometry and animation settles",
+      "pass": true
+    },
+    {
+      "name": "reset redraws full hair and clears fragments",
+      "pass": true
+    },
+    {
+      "name": "orbit control wheel and damping redraw then stop",
+      "pass": true
+    },
+    {
+      "name": "resize redraws and capture restores render visibility",
+      "pass": true
+    }
+  ],
+  "status": "通过 8 项"
+}

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HairFit — Application Architecture & Code Map</title>
+  <style>
+    :root {
+      --bg: #f6f2ea;
+      --ink: #171a18;
+      --sage: #668a7c;
+      --copper: #b46a45;
+      --card: #fffdf8;
+      --border: #d9d0c3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 48px 24px;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+    }
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+    }
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      color: var(--copper);
+      text-transform: uppercase;
+    }
+    h1 {
+      font: 500 40px Georgia, serif;
+      margin: 8px 0 12px;
+    }
+    .lede {
+      color: #4a544f;
+      font-size: 17px;
+      margin: 0 0 36px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .card h2 {
+      font: 600 20px Georgia, serif;
+      margin: 0 0 10px;
+      color: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .badge {
+      font-family: monospace;
+      font-size: 12px;
+      background: #ece5d8;
+      color: #2b3631;
+      padding: 3px 10px;
+      border-radius: 999px;
+    }
+    .flow {
+      background: #101613;
+      color: #f4f0e8;
+      border-radius: 8px;
+      padding: 28px;
+      margin-bottom: 36px;
+      overflow-x: auto;
+    }
+    .flow h2 {
+      margin: 0 0 16px;
+      font: 500 24px Georgia, serif;
+      color: #f4f0e8;
+    }
+    .steps {
+      display: flex;
+      align-items: stretch;
+      gap: 14px;
+      min-width: 760px;
+    }
+    .step {
+      flex: 1;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 6px;
+      padding: 16px;
+    }
+    .step strong {
+      display: block;
+      color: #eab595;
+      margin-bottom: 6px;
+    }
+    code {
+      font-family: Consolas, monospace;
+      font-size: 13px;
+      background: rgba(180, 106, 69, 0.12);
+      color: #7d4430;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    .flow code {
+      background: rgba(255,255,255,0.12);
+      color: #f4f0e8;
+    }
+    ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">HAIRFIT / APP ARCHITECTURE MAP</div>
+    <h1>HairFit 应用全景架构图</h1>
+    <p class="lede">从双图上传、阿里云百炼多模态换发代理，到 3D 面部对齐投影与三档渐进式沙龙试剪工作台的完整数据流与模块映射。</p>
+
+    <section class="flow">
+      <h2>核心用户旅程与数据流 (Core Journey & Data Flow)</h2>
+      <div class="steps">
+        <div class="step">
+          <strong>1. 双图上传 (Upload)</strong>
+          <p>用户上传或一键加载<code>personalImage</code>与<code>hairstyleImage</code>，经 FileReader 转为 DataURL 存入<code>SessionStore</code>。</p>
+        </div>
+        <div class="step">
+          <strong>2. 百炼代理生成 (Proxy)</strong>
+          <p>前端调用<code>POST /api/generate-preview</code>，Node 服务转发至阿里云百炼<code>qwen-image-3.0-pro</code>并返回合成大图。</p>
+        </div>
+        <div class="step">
+          <strong>3. 预览与恢复 (Result)</strong>
+          <p>展示换发大图与原图对照，自动持久化至<code>localStorage</code>，支持重新生成、更换照片或进入 3D。</p>
+        </div>
+        <div class="step">
+          <strong>4. 3D 投射试剪 (3D Studio)</strong>
+          <p>将用户面部对齐投射至 3D 头模，使用精细点剪/牙剪打薄/快速平剪渐进修剪 8,050 根发丝并观察碎发落盘。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <h2>状态与路由核心 <span class="badge">State & Router</span></h2>
+        <ul>
+          <li><code>src/main.js</code>：单页四屏路由器（<code>upload</code> / <code>generating</code> / <code>result</code> / <code>3d</code>），管理 3D 场景<code>teardown()</code>生命周期。</li>
+          <li><code>src/state/session-store.js</code>：集中维护图片 DataURL、请求状态、五区发长百分比<code>hairSections</code>与本地存储同步。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>前端视图组件 <span class="badge">UI Components</span></h2>
+        <ul>
+          <li><code>src/components/upload-panel.js</code>：双图上传卡片、一键示例填入与直接进入 3D 快捷入口。</li>
+          <li><code>src/components/generation-montage.js</code>：生成等待期的脉冲呼吸发光球（Orb）动效。</li>
+          <li><code>src/components/result-view.js</code>：单张大图预览、原图缩略图浮层与三大动作按钮。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>3D 试剪工作台 <span class="badge">Three.js WebGL</span></h2>
+        <ul>
+          <li><code>src/components/haircut-scene.js</code>：C2 连续人台雕塑、3D 正面人脸对齐投影 Shader、8,050 根双瓣各向异性丝缎发丝、三档渐进式浮点剪刀与零 GC 碎发物理池。</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>后端安全代理 <span class="badge">Node Server</span></h2>
+        <ul>
+          <li><code>server/index.js</code>：本地静态服务与<code>/api/generate-preview</code>、<code>/api/health</code>接口路由。</li>
+          <li><code>server/image-generation.js</code>：封装阿里云 DashScope 多模态图像生成调用与脱敏日志。</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+{
+  "initial": {
+    "draws": 0,
+    "cpuRenderMs": 0,
+    "flyingFragments": 0,
+    "landedFragments": 0,
+    "width": 1142,
+    "height": 479,
+    "pixelRatio": 1.5,
+    "appearance": {
+      "source": "generated",
+      "status": "loading",
+      "skinReady": false,
+      "eyesReady": false,
+      "skinFailed": false,
+      "eyesFailed": false,
+      "useSkin": 1,
+      "skinBase": [
+        0.7912979403281551,
+        0.6583748172725346,
+        0.5457244613615395
+      ],
+      "scalpRoot": [
+        0.012983032338510335,
+        0.006512090790025684,
+        0.0036765073221525194
+      ],
+      "mapPresent": false,
+      "nativeMap": false,
+      "imageReady": false,
+      "imageWidth": 0,
+      "imageHeight": 0,
+      "colorSpace": "srgb",
+      "textureVersion": 0,
+      "rendererTextureCount": 1,
+      "uniformSamplerMatchesNative": false,
+      "gpuDebugEnabled": true,
+      "gpu": null
+    }
+  },
+  "latest": {
+    "draws": 3,
+    "cpuRenderMs": 2173.699999988079,
+    "flyingFragments": 0,
+    "landedFragments": 0,
+    "width": 1142,
+    "height": 479,
+    "pixelRatio": 1.5,
+    "appearance": {
+      "source": "generated",
+      "status": "ready",
+      "skinReady": true,
+      "eyesReady": true,
+      "skinFailed": false,
+      "eyesFailed": false,
+      "useSkin": 1,
+      "skinBase": [
+        0.6375968739867731,
+        0.4232676699760063,
+        0.31854677811435356
+      ],
+      "scalpRoot": [
+        0.008293048451848346,
+        0.004391442035325718,
+        0.0019729253929411765
+      ],
+      "mapPresent": true,
+      "nativeMap": true,
+      "imageReady": true,
+      "imageWidth": 2048,
+      "imageHeight": 2048,
+      "colorSpace": "srgb",
+      "textureVersion": 1,
+      "rendererTextureCount": 4,
+      "uniformSamplerMatchesNative": true,
+      "gpuDebugEnabled": true,
+      "gpu": {
+        "useSkin": 1,
+        "skinBase": [
+          0.637596845626831,
+          0.423267662525177,
+          0.31854677200317383
+        ],
+        "scalpRoot": [
+          0.008293048478662968,
+          0.0043914420530200005,
+          0.0019729253835976124
+        ],
+        "diffuse": [
+          1,
+          1,
+          1
+        ],
+        "mapUnit": 0,
+        "nativeMapBound": true
+      }
+    }
+  }
+}

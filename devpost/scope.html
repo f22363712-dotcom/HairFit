@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>HairFit · Scope Review</title>
+  <style>
+    :root {
+      --ink: #17201c;
+      --muted: #617067;
+      --paper: #f1eee5;
+      --surface: #fffdf7;
+      --line: #d7d2c5;
+      --accent: #c45a36;
+      --accent-soft: #f1d8ca;
+      --sage: #476754;
+      --sage-soft: #dce7dc;
+      --gold: #bd8841;
+      --gold-soft: #f2e4c9;
+      --shadow: 0 24px 70px rgba(35, 42, 37, .12);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 8% 4%, rgba(196, 90, 54, .13), transparent 26rem),
+        radial-gradient(circle at 94% 22%, rgba(71, 103, 84, .12), transparent 30rem),
+        var(--paper);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; }
+    .page { width: min(1180px, calc(100% - 40px)); margin: 32px auto 64px; }
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(28px, 5vw, 64px);
+      border: 1px solid rgba(255, 255, 255, .38);
+      border-radius: 30px;
+      color: #fffaf0;
+      background: #17201c;
+      box-shadow: var(--shadow);
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      right: -170px;
+      top: -210px;
+      border: 70px solid rgba(196, 90, 54, .38);
+      border-radius: 50%;
+    }
+    .eyebrow {
+      display: inline-flex;
+      gap: 8px;
+      align-items: center;
+      margin: 0 0 20px;
+      padding: 7px 11px;
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: 999px;
+      color: #d9e3db;
+      font-size: 12px;
+      font-weight: 760;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #ef8d63;
+      box-shadow: 0 0 0 5px rgba(239,141,99,.14);
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 {
+      position: relative;
+      z-index: 1;
+      max-width: 780px;
+      margin-bottom: 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(48px, 8vw, 92px);
+      font-weight: 500;
+      line-height: .95;
+      letter-spacing: -.055em;
+    }
+    .hero-lead {
+      position: relative;
+      z-index: 1;
+      max-width: 790px;
+      margin-bottom: 34px;
+      color: #d8dfda;
+      font-size: clamp(18px, 2.1vw, 25px);
+      line-height: 1.45;
+    }
+    .hero-meta {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      padding: 9px 13px;
+      border: 1px solid rgba(255,255,255,.17);
+      border-radius: 999px;
+      color: #eef3ef;
+      background: rgba(255,255,255,.06);
+      font-size: 13px;
+    }
+    .pill strong { color: #ffac83; }
+
+    section { margin-top: 24px; }
+    .section-card {
+      padding: clamp(24px, 4vw, 46px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: rgba(255, 253, 247, .88);
+      box-shadow: 0 12px 35px rgba(35, 42, 37, .055);
+    }
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(170px, .35fr) minmax(0, 1fr);
+      gap: 32px;
+      align-items: start;
+      margin-bottom: 28px;
+    }
+    .section-number {
+      color: var(--accent);
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    h2 {
+      margin-bottom: 12px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(32px, 4.3vw, 52px);
+      font-weight: 500;
+      line-height: 1.04;
+      letter-spacing: -.035em;
+    }
+    .section-intro {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .kernel {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+    .kernel-copy {
+      padding: clamp(24px, 4vw, 42px);
+      border-radius: 18px;
+      color: #fffaf0;
+      background: var(--accent);
+    }
+    .kernel-copy h3 {
+      margin-bottom: 14px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 500;
+      line-height: 1.08;
+      letter-spacing: -.025em;
+    }
+    .kernel-copy p { margin-bottom: 0; color: #fff1e9; font-size: 18px; }
+    .kernel-proof {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 20px;
+      padding: clamp(24px, 4vw, 42px);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+    .proof-label {
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .proof-line {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      font-size: 17px;
+      font-weight: 650;
+    }
+    .proof-dot {
+      flex: 0 0 auto;
+      display: grid;
+      width: 31px;
+      height: 31px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--surface);
+      background: var(--sage);
+      font-family: Consolas, monospace;
+      font-size: 12px;
+    }
+
+    .diagram-wrap {
+      overflow-x: auto;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background:
+        linear-gradient(rgba(23, 32, 28, .035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(23, 32, 28, .035) 1px, transparent 1px),
+        #faf8f1;
+      background-size: 24px 24px;
+    }
+    .diagram-wrap svg { display: block; min-width: 920px; width: 100%; height: auto; }
+    .svg-title { font: 700 14px Inter, sans-serif; fill: var(--ink); }
+    .svg-small { font: 500 11px Inter, sans-serif; fill: var(--muted); }
+    .svg-arrow { stroke: #98a198; stroke-width: 2; fill: none; }
+    .svg-accent { stroke: var(--accent); stroke-width: 3; fill: none; }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+    .audience-card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+    }
+    .audience-card h3 { margin-bottom: 9px; font-size: 18px; }
+    .audience-card p { margin-bottom: 0; color: var(--muted); }
+    .audience-card.highlight { border-color: #dfad97; background: #fff6ef; }
+
+    .loop {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      counter-reset: step;
+    }
+    .loop-step {
+      position: relative;
+      min-height: 190px;
+      padding: 24px 20px 20px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+      counter-increment: step;
+    }
+    .loop-step::before {
+      content: counter(step, decimal-leading-zero);
+      display: block;
+      margin-bottom: 42px;
+      color: var(--accent);
+      font-family: Consolas, monospace;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .loop-step h3 { margin-bottom: 8px; font-size: 17px; }
+    .loop-step p { margin-bottom: 0; color: var(--muted); font-size: 14px; }
+    .loop-step:nth-child(2) { transform: translateY(14px); }
+    .loop-step:nth-child(3) { transform: translateY(-4px); }
+    .loop-step:nth-child(4) { transform: translateY(10px); }
+
+    .working {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 22px;
+      align-items: stretch;
+    }
+    .working-art {
+      min-height: 350px;
+      padding: 24px;
+      border-radius: 18px;
+      background: #17201c;
+      color: #e7eeea;
+    }
+    .working-art svg { width: 100%; height: 100%; min-height: 280px; display: block; }
+    .working-copy {
+      padding: 28px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: var(--surface);
+    }
+    .working-copy h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+    .working-copy blockquote {
+      margin: 24px 0 0;
+      padding: 19px 20px;
+      border-left: 4px solid var(--accent);
+      color: #584b44;
+      background: #fff6ef;
+      font-size: 16px;
+    }
+
+    .scope-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    details {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: var(--surface);
+      overflow: hidden;
+    }
+    details[open] { box-shadow: 0 14px 34px rgba(35,42,37,.08); }
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 22px;
+      cursor: pointer;
+      list-style: none;
+      font-size: 17px;
+      font-weight: 760;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after {
+      content: "+";
+      display: grid;
+      flex: 0 0 auto;
+      width: 30px;
+      height: 30px;
+      place-items: center;
+      border-radius: 50%;
+      background: #efede5;
+      font-family: Consolas, monospace;
+      font-size: 18px;
+    }
+    details[open] summary::after { content: "−"; }
+    .details-body { padding: 0 22px 22px; color: var(--muted); }
+    .details-body ul { margin: 0; padding-left: 20px; }
+    .details-body li + li { margin-top: 9px; }
+    details.now { border-top: 5px solid var(--sage); }
+    details.later { border-top: 5px solid var(--gold); }
+    details.cut { border-top: 5px solid var(--accent); }
+
+    .learning {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+      align-items: start;
+    }
+    .learning-text { font-size: 18px; }
+    .decision-ledger {
+      display: grid;
+      gap: 10px;
+    }
+    .ledger-row {
+      display: grid;
+      grid-template-columns: 110px 1fr;
+      gap: 16px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--surface);
+    }
+    .ledger-row strong { color: var(--sage); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+
+    .review {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 22px;
+      align-items: center;
+      color: #fffaf0;
+      background: var(--sage);
+    }
+    .review h2 { margin-bottom: 8px; }
+    .review p { margin-bottom: 0; color: #dce7df; }
+    .status {
+      padding: 15px 18px;
+      border: 1px solid rgba(255,255,255,.26);
+      border-radius: 14px;
+      font-size: 13px;
+      white-space: nowrap;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 0 8px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: right;
+    }
+
+    @media (max-width: 900px) {
+      .section-head, .kernel, .working, .learning { grid-template-columns: 1fr; }
+      .loop { grid-template-columns: repeat(2, 1fr); }
+      .loop-step:nth-child(n) { transform: none; }
+      .scope-grid { grid-template-columns: 1fr; }
+      .review { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 620px) {
+      .page { width: min(100% - 22px, 1180px); margin-top: 11px; }
+      .hero { border-radius: 22px; }
+      .audience-grid, .loop { grid-template-columns: 1fr; }
+      .section-card { border-radius: 16px; }
+      .ledger-row { grid-template-columns: 1fr; gap: 5px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .page { width: 100%; margin: 0; }
+      .hero, .section-card, details { box-shadow: none; break-inside: avoid; }
+      details > .details-body { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <p class="eyebrow">Scope · Approved</p>
+      <h1>HairFit</h1>
+      <p class="hero-lead">Upload the hairstyle you want and your own photo, preview it on yourself, then continue into a physical-feeling 3D haircut before sitting in the barber chair.</p>
+      <div class="hero-meta">
+        <span class="pill"><strong>User</strong> · haircut decision maker</span>
+        <span class="pill"><strong>Input</strong> · selfie + hairstyle reference</span>
+        <span class="pill"><strong>Kernel</strong> · editable 3D cut with falling hair</span>
+      </div>
+    </header>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div class="section-number">01 · The kernel</div>
+        <div>
+          <h2>From your inspiration to a haircut you can feel.</h2>
+          <p class="section-intro">The user starts with a photo of themselves and a hairstyle they already want. HairFit first shows that direction on their face, then makes the decision physical through direct three-dimensional cutting.</p>
+        </div>
+      </div>
+      <div class="kernel">
+        <div class="kernel-copy">
+          <h3>The sequence is the product.</h3>
+          <p>A real two-image preview establishes “this is what I want to explore.” The virtual cut turns that image into an interaction whose consequence the user can see.</p>
+        </div>
+        <div class="kernel-proof">
+          <span class="proof-label">The “oh, that’s cool” beat</span>
+          <div class="proof-line"><span class="proof-dot">01</span><span>Two images produce a personal hairstyle preview</span></div>
+          <div class="proof-line"><span class="proof-dot">02</span><span>A hand or pointer cuts the 3D rehearsal</span></div>
+          <div class="proof-line"><span class="proof-dot">03</span><span>A clump falls and the hairstyle updates</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div class="section-number">02 · Who and why</div>
+        <div>
+          <h2>A high-intent moment with a costly mistake.</h2>
+          <p class="section-intro">The target user is about to make a real change and wants evidence before committing. A poor decision can affect confidence and appearance for weeks or months.</p>
+        </div>
+      </div>
+      <div class="audience-grid">
+        <article class="audience-card highlight">
+          <h3>Today</h3>
+          <p>They already saved a hairstyle they like, but must imagine how that reference will translate from another face to their own. Static before-and-after tools stop at one generated image.</p>
+        </article>
+        <article class="audience-card">
+          <h3>With HairFit</h3>
+          <p>They upload the selfie and reference, see the direction on their own face, then continue into a 3D rehearsal and shape the silhouette through direct interaction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div class="section-number">03 · The loop</div>
+        <div>
+          <h2>From “I want this” to “I can shape it.”</h2>
+          <p class="section-intro">The proof of concept connects the natural reference-photo moment to the unusual act of cutting a three-dimensional hairstyle.</p>
+        </div>
+      </div>
+      <div class="loop">
+        <article class="loop-step">
+          <h3>Bring the intent</h3>
+          <p>Upload a selfie and the hairstyle reference the user already has in mind.</p>
+        </article>
+        <article class="loop-step">
+          <h3>See it</h3>
+          <p>Generate a real preview that preserves the recognizable person and applies the reference direction.</p>
+        </article>
+        <article class="loop-step">
+          <h3>Enter the sandbox</h3>
+          <p>Move from the photographic target into a rotatable 3D rehearsal on a built-in head.</p>
+        </article>
+        <article class="loop-step">
+          <h3>Cut and judge</h3>
+          <p>Sweep a hand or pointer through hair, watch a clump fall, then continue shaping or reset.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div class="section-number">04 · The proof</div>
+        <div>
+          <h2>Working means both stages are real.</h2>
+          <p class="section-intro">The judge must see two images produce a personal preview, then see the separate 3D cut with falling hair. Neither stage is shown as a mock screenshot.</p>
+        </div>
+      </div>
+      <div class="working">
+        <div class="working-art">
+          <svg viewBox="0 0 560 350" role="img" aria-labelledby="cut-illustration-title">
+            <title id="cut-illustration-title">A stylized 3D head being cut, with a hair clump falling beneath a curved hand path</title>
+            <defs>
+              <linearGradient id="headFill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#f0d3b9"/>
+                <stop offset="1" stop-color="#cfa58a"/>
+              </linearGradient>
+              <linearGradient id="hairFill" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#344239"/>
+                <stop offset="1" stop-color="#121915"/>
+              </linearGradient>
+            </defs>
+            <path d="M76 280 C115 252 146 242 184 237" stroke="#54715f" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="8 9"/>
+            <path d="M111 260 C177 226 230 198 283 156" stroke="#ef8358" stroke-width="4" fill="none" stroke-linecap="round" stroke-dasharray="9 10"/>
+            <path d="M277 153 C310 127 350 115 390 119" stroke="#ef8358" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <circle cx="115" cy="259" r="11" fill="#f6e9d9"/>
+            <path d="M96 283 C104 269 116 262 128 264 C137 266 141 275 136 285" fill="none" stroke="#f6e9d9" stroke-width="12" stroke-linecap="round"/>
+            <path d="M282 94 C351 66 452 85 472 157 C488 215 453 287 372 301 C308 312 255 279 245 220 C237 171 247 126 282 94Z" fill="url(#headFill)"/>
+            <path d="M254 155 C246 104 277 58 339 50 C408 41 461 80 469 143 C473 175 464 201 449 220 C445 185 434 151 411 126 C379 142 338 145 309 121 C293 140 277 155 254 174Z" fill="url(#hairFill)"/>
+            <path d="M294 129 C320 149 351 154 385 139 C396 158 401 179 400 208 C376 193 344 188 314 197 C294 204 278 218 268 235 C269 187 276 151 294 129Z" fill="#26332c"/>
+            <path d="M344 50 C321 92 314 145 317 210" fill="none" stroke="#5b6b61" stroke-width="3" opacity=".65"/>
+            <path d="M386 52 C369 103 369 151 385 190" fill="none" stroke="#5b6b61" stroke-width="3" opacity=".55"/>
+            <path d="M419 149 C401 187 396 220 404 249" fill="none" stroke="#5b6b61" stroke-width="3" opacity=".45"/>
+            <path d="M428 168 C456 190 459 225 442 252" stroke="#ef8358" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <path d="M441 179 C451 186 457 196 458 207" stroke="#ef8358" stroke-width="4" fill="none" stroke-linecap="round"/>
+            <g fill="#233029">
+              <path d="M431 232 C439 236 442 244 438 253 C433 263 427 267 421 264 C424 253 426 243 431 232Z"/>
+              <path d="M419 255 C424 263 422 274 414 283 C408 275 408 264 412 254Z"/>
+              <path d="M438 259 C445 268 443 278 436 286 C430 277 431 267 434 258Z"/>
+            </g>
+            <circle cx="308" cy="206" r="5" fill="#26332c"/>
+            <path d="M373 245 C386 253 401 252 412 244" fill="none" stroke="#8b5d53" stroke-width="3" stroke-linecap="round"/>
+            <text x="84" y="318" class="svg-small" fill="#b9c6be">hand path</text>
+            <text x="416" y="304" class="svg-small" fill="#b9c6be">falling clump</text>
+          </svg>
+        </div>
+        <div class="working-copy">
+          <h3>The finish line</h3>
+          <p>A user uploads a selfie and reference, receives a real AI hairstyle preview, enters the 3D sandbox, performs a gesture or pointer cut, sees a clump fall, and watches the rehearsal update. The 3D stage is clearly identified as a built-in head rather than the uploaded person.</p>
+          <blockquote>The showcase sequence connects a personal “could this work on me?” preview to one uninterrupted 3D cut with visible physical consequence.</blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div class="section-number">05 · Boundary</div>
+        <div>
+          <h2>Keep the experiment sharp.</h2>
+          <p class="section-intro">The proof of concept protects one signature interaction. Everything else has a named place so no direction disappears silently.</p>
+        </div>
+      </div>
+      <div class="scope-grid">
+        <details class="now" open>
+          <summary>Now · the POC</summary>
+          <div class="details-body">
+            <ul>
+              <li>One real two-image AI hairstyle preview from a selfie and reference image.</li>
+              <li>One built-in stylized 3D head for the cut rehearsal.</li>
+              <li>Hand gesture and pointer input in a desktop browser.</li>
+              <li>A visible cut, animated falling hair, and an immediately updated hairstyle.</li>
+              <li>Repeated cutting and a way to reset the experiment.</li>
+              <li>A short end-to-end screen recording.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="later">
+          <summary>Later · real personalization</summary>
+          <div class="details-body">
+            <ul>
+              <li>Revisit personalized 3D representation only if a later technique can support reliable capture and direct hairstyle editing.</li>
+              <li>Washing, blow-drying, styling, and varied hair physics.</li>
+              <li>Automated suitability guidance.</li>
+              <li>A communication result for a stylist.</li>
+              <li>Accounts, history, and hairstyle presets.</li>
+            </ul>
+          </div>
+        </details>
+        <details class="cut">
+          <summary>Cut · from this POC</summary>
+          <div class="details-body">
+            <ul>
+              <li>Personal 3D reconstruction from this POC because the personal stage uses a real two-image preview and the cut stage uses a built-in rehearsal head.</li>
+              <li>Gaussian-splatting projects such as OOOSplat, LAM, and FaceLift because they add desktop or GPU dependencies and do not provide directly editable hair strands.</li>
+              <li>Three service simulations, which would dilute one coherent cutting loop.</li>
+              <li>Automatic suitability scores, which would not prove the visual experiment.</li>
+              <li>Stylist export and sharing, which depend on a convincing preview.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-head">
+        <div class="section-number">06 · Why this learner</div>
+        <div>
+          <h2>Product judgment meets visible evidence.</h2>
+          <p class="section-intro">The learner will own the decisions that require judgment. The agent will own implementation, and each change will be checked through observable behavior.</p>
+        </div>
+      </div>
+      <div class="learning">
+        <div class="learning-text">
+          <p>HairFit matters because the learner wants to remove a costly real-world decision mistake. The project is also a rehearsal for agent collaboration: what did the learner decide, what did the agent interpret, and what did the screen actually prove?</p>
+        </div>
+        <div class="decision-ledger">
+          <div class="ledger-row"><strong>Learner</strong><span>Choose the user problem, memorable moment, scope, and whether the effect is convincing.</span></div>
+          <div class="ledger-row"><strong>Agent</strong><span>Explain tradeoffs, implement the interaction, and surface evidence from the running product.</span></div>
+          <div class="ledger-row"><strong>Shared</strong><span>When behavior misses the goal, reduce it to one observable failure and revise the next smallest step.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card review">
+      <div>
+        <h2>Review this direction.</h2>
+        <p>If it matches your judgment, say “looks good” and the Scope becomes approved. If not, name the part that should change.</p>
+      </div>
+      <div class="status">Status · approved</div>
+    </section>
+
+    <footer>HairFit · Devpost Learn Build With AI: Basics · Scope HTML companion</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+  "source": "four public Google example images; actual local SDK/model",
+  "physicalAccuracy": false,
+  "checks": [
+    {
+      "image": "victory.jpg",
+      "detectedHand": true,
+      "scissorsPose": true,
+      "intentArmed": true,
+      "metric": "world",
+      "pass": true,
+      "gap": 1.1895267910101603,
+      "inferenceMs": 20.1
+    },
+    {
+      "image": "thumbs_up.jpg",
+      "detectedHand": true,
+      "scissorsPose": false,
+      "intentArmed": false,
+      "pass": true,
+      "metric": "camera",
+      "gap": 0.29101257751652765,
+      "inferenceMs": 21
+    },
+    {
+      "image": "thumbs_down.jpg",
+      "detectedHand": true,
+      "scissorsPose": false,
+      "intentArmed": false,
+      "pass": true,
+      "metric": "camera",
+      "gap": 0.3291963087936184,
+      "inferenceMs": 22.9
+    },
+    {
+      "image": "pointing_up.jpg",
+      "detectedHand": true,
+      "scissorsPose": false,
+      "intentArmed": false,
+      "pass": true,
+      "metric": "camera",
+      "gap": 2.0468092998294125,
+      "inferenceMs": 21.2
+    }
+  ],
+  "finalCodeRerun": true
+}

@@ -1,0 +1,41 @@
+{
+  "asset": "MakeHuman hm08 anatomical head/shoulders and fitted eyes",
+  "license": "CC0-1.0",
+  "licenseEvidence": "https://github.com/makehumancommunity/makehuman/blob/master/LICENSE.md#c-the-license-for-the-bundled-assets",
+  "licenseCopy": "public/models/LICENSE.MAKEHUMAN.ASSETS.txt",
+  "derivedFile": "src/assets/head-template.js",
+  "derivedSha256": "f247d6f05a02ffa9c9225e4821804b0ba635af5a1de6c81146180516d8abc159",
+  "sourceAssets": [
+    {
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/master/makehuman/data/3dobjs/base.obj",
+      "sha256": "8e761e6624b8f54536409135d1636da63b32486a90d4897f84e121d144f6fb4c"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/master/makehuman/data/eyes/high-poly/high-poly.obj",
+      "sha256": "da2493215b708a344c33dc72f2a9a5b8fa985dcc5a70ad3b208995cf871da8e1"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/master/makehuman/data/eyes/high-poly/high-poly.mhclo",
+      "sha256": "b183cfe37120ab726f9b3f2ea6cd3a64c44ce7b4bd91a77c841cf70c04f83a0d"
+    },
+    {
+      "source": "https://raw.githubusercontent.com/makehumancommunity/makehuman/master/makehuman/data/targets/macrodetails/asian-male-young.target",
+      "sha256": "ed2e8c191cb6b87b4a2d97c80486acb2604fa549316c7aa2a738a5d5a14334dc"
+    },
+    {
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+      "member": "skins/young_asian_male/young_lightskinned_male_diffuse3.png",
+      "derivedFile": "public/models/head-skin.png",
+      "sha256": "f50016a5507fc687dc8df06599c8ea48de950cd185de33a71cafc1319ddab4d5"
+    },
+    {
+      "source": "https://files2.makehumancommunity.org/asset_packs/makehuman_system_assets/makehuman_system_assets_cc0.zip",
+      "member": "eyes/materials/brown_eye.png",
+      "derivedFile": "public/models/head-eyes.png",
+      "sha256": "4659691c7295ad6206c78b003e5fd0e5f91dcd53032fa914a229bb48cabe424b"
+    }
+  ],
+  "processing": "Keep body faces above source y4.7; remove helpers. Apply CC0 adult male target and fixed uniform scale/translation. Bind eyes through graphical barycentric data. Preserve native skin/eye UVs and shared normals; derive scalp radius lookup. No user-specific fit or MakeHuman program code.",
+  "identity": "Generic human template, no user-specific reconstruction.",
+  "assetPackLicenseEvidence": "https://static.makehumancommunity.org/assets/assetpacks/makehuman_system_assets.html"
+}

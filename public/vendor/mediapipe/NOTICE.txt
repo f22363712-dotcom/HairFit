@@ -1,0 +1,4 @@
+MediaPipe Tasks Vision 1.1.1
+Copyright 2023 The MediaPipe Authors
+Licensed under Apache License 2.0.
+Hand Landmarker model source is recorded in /models/manifest.json. Official model card identifies Apache License 2.0: https://storage.googleapis.com/mediapipe-assets/Model%20Card%20Hand%20Tracking%20(Lite_Full)%20with%20Fairness%20Oct%202021.pdf

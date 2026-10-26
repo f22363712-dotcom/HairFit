@@ -1,0 +1,36 @@
+# Live miss rate remains unacceptable
+
+The learner reported approximately50 physical opening/closure attempts with only12 recognized closures after the previous correction. This is a failed live acceptance report. Synthetic cadence checks and isolated latency observations did not establish usability.
+
+No further trigger threshold was changed in this diagnosis step. Added an opt-in10-second numeric trial in the camera dock. It records at most240 sanitized samples, including fresh/stale/inactive reasons, opening/closing stage, 2D versus 3D fingertip gaps and finger-extension flags. It never retains video, image pixels or the21-joint arrays. The report remains in the browser and stops after10 seconds. Frames captured before the trial start are excluded.
+
+Node suite51/51 and build passed. Independent review passed18 related checks and compared5000 new/old pose decisions without a semantic difference. This verifies the diagnostic tool only, not a fix to the live miss rate.
+
+The main page has been refreshed into3D with camera enabled and a usable “记录十秒动作诊断” button. An asynchronous request asks the learner to click it, make five natural open/close motions, wait for “诊断结束” and reply. Do not refresh or navigate the main page before reading its frozen report. Do not save or transmit webcam images.
+
+Next investigation must follow the trace. Distinguish stale/low-cadence results from rejected finger geometry, missing open confirmation, and failure to cross the closed-gap threshold. In particular, world depth can disagree with the visible2D gap, but that remains a hypothesis until the real trace is captured. Do not train a model or keep relaxing thresholds from ideal fixtures without that evidence. No paid model request was made.
+
+
+## First saved trial and pending framing confirmation
+
+The learner again reported about one recognized event per five motions, but the initial UI report was empty and still showed its initial diagnostic message. No actual trace from that first attempt was available. The helper now arms and waits for the first detected hand before starting its10-second window; the assistant clicked the arm button. Stale frames carry only a detectedHand boolean, while their joint arrays remain dropped. During an explicitly armed diagnostic, a visible-but-unfocused page may run inference and record pose metadata, but actual cutting remains behind the original focus/visibility gate. Hiding the page does not submit new inference.52/52 tests and build passed; independent review26/26 found no Important issue in these diagnostics changes.
+
+The resulting frozen report was actually retrieved and saved locally to ignored test-assets/gesture-trial-20261025.json. It has148 samples:147 no-hand and1 not-armed. Median response24.55ms, maximum87.3ms, median sample interval66.7ms. Its one detected hand had world finger flags1100, screen flags1111, world gap0.253 and screen gap0.370. That one frame is insufficient for closure-rule calibration. No stale or focus rejection was recorded in this window.
+
+A pending async question asks whether the entire hand was continuously visible in the camera preview and five motions were actually completed during this specific window. Without that confirmation, do not assume these148 frames represent five gestures. The earlier five-motion request may not have lined up with capture. Keep the current browser report and do not refresh until read/save is complete (it is now saved). No detection or gesture threshold has been changed in this step.
+
+Installed MediaPipe1.1.1 documentation at node_modules/@mediapipe/tasks-vision/vision.d.ts:1055–1073 states default detection/presence/tracking confidences0.5; this project currently sets all three0.65. A same-frame comparison against the documented default is a possible next experiment if full-hand visibility is confirmed. It is a hypothesis, not an established fix. No paid model call or video recording occurred.
+
+## Timing uncertainty and transition experiment
+
+The learner replied that the motions were completed, but the saved window may have passed unnoticed. The148-frame report does not establish whether the five motions occurred inside its capture window. Do not turn147 no-hand frames into a physical recognition failure rate. The earlier learner report of roughly one recognized closure per five attempts remains failed live acceptance.
+
+Reproduced a distinct sampling limitation before changing production code. A constructed15fps sequence with five cycles, only the first holding two open samples, produced one old-rule snip instead of five. Production now arms on one fresh, valid open sample. Clear closures still emit immediately; marginal closures retain55ms confirmation. Existing pose, hand-loss, time-gap and discontinuity guards remain. A frame that switches hand or jumps position cannot simultaneously rearm. A new opening may begin during cooldown; an early closure is consumed, never released later while held closed. A first opening snaps the cursor to its real aim rather than starting40% along the old cursor path.
+
+The old60ms-opening rule runs read-only beside production on the same eligible frames. It never modifies hair. The diagnostic now waits for a detected hand and stays on until explicitly stopped. It retains at most240 sanitized records, compresses consecutive no-pose runs, and counts accepted events over all processed frames. Detailed records can roll off; new/old totals do not. No webcam pixels or complete joint arrays are stored. Off-focus observations remain numeric only; focus, visibility and fresh-frame checks still guard actual cutting. Counts from inactive periods must not be presented as physical recognition accuracy.
+
+Verification at this checkpoint is57/57 Node tests, successful Vite build and whitespace check. Same constructed five-cycle input gives new5/old1. This is state-machine evidence only, not a live-camera success claim. No model retraining, confidence/resolution change or paid API call occurred. The next check uses manual-stop capture so the assistant can save after the learner replies without a ten-second deadline. Independent review and browser checks are recorded below when complete.
+
+Independent review passed31 related tests plus extra gating/count checks with no Critical or Important finding. Browser UI verified manual start, waiting with an enabled stop control, and a frozen schema2 manual-stop report. This empty preflight report had zero frames and is not a user trial. The runtime report confirms openDwellMs0, marginal closeDwellMs55 and legacy opening60. Live GPU response after reload fluctuated around199–270ms, including stale frames. Responsiveness remains unresolved; do not replace this observation with older faster timings. Vite main chunk1190.53kB/gzip377.55kB still warns. No webcam screenshot was captured.
+
+Final UI arm succeeded, explicitly showing that it will not stop automatically. At that moment response312ms/inference297ms was stale. An async request asks the learner to click the trial page, perform five natural cycles and reply. Keep this page and diagnostic alive; save on their response before further reloads. The delayed-window data will help distinguish stale-frame rejection from pose/transition loss. No claim that this run will satisfy acceptance.

@@ -1,0 +1,752 @@
+{
+  "rows": [
+    {
+      "reporting": "buffered-after-case",
+      "path": "production scene with explicit scheduler and capture options + actual worker",
+      "cutY": 0.39,
+      "startupFrames": [],
+      "requestedDelegate": "AUTO",
+      "delegate": "GPU",
+      "mode": "falling",
+      "sdk": "current",
+      "source": "video",
+      "model": "full",
+      "pump": null,
+      "capture": "default",
+      "elapsedMs": 4877,
+      "detected": 64,
+      "fresh": 64,
+      "usableHz": 13.12282140660242,
+      "p95Ms": 78.7999999821186,
+      "drawHz": 28.29608365798647,
+      "overlayHz": 0,
+      "scene": {
+        "draws": 140,
+        "cpuRenderMs": 1120.599999755621,
+        "flyingFragments": 35,
+        "landedFragments": 0,
+        "width": 1134,
+        "height": 479,
+        "pixelRatio": 1,
+        "hairGeometry": {
+          "profile": "ribbon",
+          "experimental": false,
+          "segments": 15,
+          "verticesPerPoint": 2,
+          "strands": 8050,
+          "triangles": 241500,
+          "referenceBakes": 0,
+          "groomId": "procedural-crop-v1"
+        },
+        "appearance": {
+          "source": "generated",
+          "status": "ready",
+          "skinReady": true,
+          "eyesReady": true,
+          "skinFailed": false,
+          "eyesFailed": false,
+          "useSkin": 1,
+          "skinBase": [
+            0.6375968739867731,
+            0.4232676699760063,
+            0.31854677811435356
+          ],
+          "scalpRoot": [
+            0.008293048451848346,
+            0.004391442035325718,
+            0.0019729253929411765
+          ],
+          "mapPresent": true,
+          "nativeMap": true,
+          "imageReady": true,
+          "imageWidth": 2048,
+          "imageHeight": 2048,
+          "colorSpace": "srgb",
+          "textureVersion": 1,
+          "rendererTextureCount": 4,
+          "uniformSamplerMatchesNative": true,
+          "gpuDebugEnabled": false,
+          "gpu": null
+        }
+      },
+      "cuts": [
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 70.7000000178814
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 19.5
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 16.099999994039536
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 14.900000005960464
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 16.099999994039536
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 11.100000023841858
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 16.80000001192093
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 11.5
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 10
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 9.900000005960464
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 11.299999982118607
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 14.699999988079071
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 8.300000011920929
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 14.099999994039536
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 10.699999988079071
+        },
+        {
+          "affectedStrands": 35,
+          "removedSegments": 116.9423828125,
+          "fallingSegments": 143,
+          "durationMs": 13.099999994039536
+        }
+      ],
+      "frames": [
+        {
+          "latencyMs": 118.2000000178814,
+          "inferenceMs": 105.5,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 10,
+          "workerRoundTripMs": 108,
+          "deliveryMs": 2.5
+        },
+        {
+          "latencyMs": 115.40000000596046,
+          "inferenceMs": 112.90000000596046,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.9000000059604645,
+          "workerRoundTripMs": 114.5,
+          "deliveryMs": 1.5999999940395355
+        },
+        {
+          "latencyMs": 79.09999999403954,
+          "inferenceMs": 75,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.699999988079071,
+          "workerRoundTripMs": 76.40000000596046,
+          "deliveryMs": 1.4000000059604645
+        },
+        {
+          "latencyMs": 51.599999994039536,
+          "inferenceMs": 48.400000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.199999988079071,
+          "workerRoundTripMs": 49.30000001192093,
+          "deliveryMs": 0.9000000059604645
+        },
+        {
+          "latencyMs": 78.7999999821186,
+          "inferenceMs": 73.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 4.5999999940395355,
+          "workerRoundTripMs": 74,
+          "deliveryMs": 0.699999988079071
+        },
+        {
+          "latencyMs": 60.79999998211861,
+          "inferenceMs": 59.400000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.7999999821186066,
+          "workerRoundTripMs": 60,
+          "deliveryMs": 0.5999999940395355
+        },
+        {
+          "latencyMs": 45.099999994039536,
+          "inferenceMs": 42.70000001788139,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.7000000178813934,
+          "workerRoundTripMs": 43.39999997615814,
+          "deliveryMs": 0.6999999582767487
+        },
+        {
+          "latencyMs": 44.60000002384186,
+          "inferenceMs": 40.89999997615814,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.800000011920929,
+          "workerRoundTripMs": 41.80000001192093,
+          "deliveryMs": 0.9000000357627869
+        },
+        {
+          "latencyMs": 58.400000005960464,
+          "inferenceMs": 55.400000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.7000000178813934,
+          "workerRoundTripMs": 56.599999994039536,
+          "deliveryMs": 1.199999988079071
+        },
+        {
+          "latencyMs": 44,
+          "inferenceMs": 40.19999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 3.0999999940395355,
+          "workerRoundTripMs": 40.900000005960464,
+          "deliveryMs": 0.7000000178813934
+        },
+        {
+          "latencyMs": 46.400000005960464,
+          "inferenceMs": 42.80000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 3,
+          "workerRoundTripMs": 43.400000005960464,
+          "deliveryMs": 0.5999999940395355
+        },
+        {
+          "latencyMs": 78.30000001192093,
+          "inferenceMs": 74.69999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 3,
+          "workerRoundTripMs": 75.30000001192093,
+          "deliveryMs": 0.6000000238418579
+        },
+        {
+          "latencyMs": 67.80000001192093,
+          "inferenceMs": 66.59999999403954,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 67,
+          "deliveryMs": 0.4000000059604645
+        },
+        {
+          "latencyMs": 46.19999998807907,
+          "inferenceMs": 43.19999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.0999999940395355,
+          "workerRoundTripMs": 44,
+          "deliveryMs": 0.800000011920929
+        },
+        {
+          "latencyMs": 51.80000001192093,
+          "inferenceMs": 49.099999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2,
+          "workerRoundTripMs": 49.70000001788139,
+          "deliveryMs": 0.6000000238418579
+        },
+        {
+          "latencyMs": 47.69999998807907,
+          "inferenceMs": 44.400000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.5999999940395355,
+          "workerRoundTripMs": 45.099999994039536,
+          "deliveryMs": 0.699999988079071
+        },
+        {
+          "latencyMs": 78.10000002384186,
+          "inferenceMs": 75.2999999821186,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.199999988079071,
+          "workerRoundTripMs": 76.60000002384186,
+          "deliveryMs": 1.3000000417232513
+        },
+        {
+          "latencyMs": 50.5,
+          "inferenceMs": 47.19999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 49.900000005960464,
+          "deliveryMs": 2.7000000178813934
+        },
+        {
+          "latencyMs": 45.69999998807907,
+          "inferenceMs": 44.70000001788139,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5,
+          "workerRoundTripMs": 45.19999998807907,
+          "deliveryMs": 0.4999999701976776
+        },
+        {
+          "latencyMs": 53,
+          "inferenceMs": 51.89999997615814,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 52.400000005960464,
+          "deliveryMs": 0.5000000298023224
+        },
+        {
+          "latencyMs": 58.099999994039536,
+          "inferenceMs": 56.10000002384186,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1,
+          "workerRoundTripMs": 56.79999998211861,
+          "deliveryMs": 0.6999999582767487
+        },
+        {
+          "latencyMs": 35.19999998807907,
+          "inferenceMs": 32.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.0999999940395355,
+          "workerRoundTripMs": 33.099999994039536,
+          "deliveryMs": 0.7999999821186066
+        },
+        {
+          "latencyMs": 36.5,
+          "inferenceMs": 29.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2,
+          "workerRoundTripMs": 34.5,
+          "deliveryMs": 5.199999988079071
+        },
+        {
+          "latencyMs": 32.599999994039536,
+          "inferenceMs": 30.299999982118607,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.699999988079071,
+          "workerRoundTripMs": 30.900000005960464,
+          "deliveryMs": 0.6000000238418579
+        },
+        {
+          "latencyMs": 76.40000000596046,
+          "inferenceMs": 68.19999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 7.0999999940395355,
+          "workerRoundTripMs": 69.09999999403954,
+          "deliveryMs": 0.9000000059604645
+        },
+        {
+          "latencyMs": 52.900000005960464,
+          "inferenceMs": 51.19999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1,
+          "workerRoundTripMs": 51.900000005960464,
+          "deliveryMs": 0.7000000178813934
+        },
+        {
+          "latencyMs": 52.400000005960464,
+          "inferenceMs": 49,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.0999999940395355,
+          "workerRoundTripMs": 50.20000001788139,
+          "deliveryMs": 1.2000000178813934
+        },
+        {
+          "latencyMs": 48.400000005960464,
+          "inferenceMs": 45.099999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.4000000059604645,
+          "workerRoundTripMs": 46,
+          "deliveryMs": 0.9000000059604645
+        },
+        {
+          "latencyMs": 56.5,
+          "inferenceMs": 55.10000002384186,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 55.79999998211861,
+          "deliveryMs": 0.6999999582767487
+        },
+        {
+          "latencyMs": 46,
+          "inferenceMs": 43.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.0999999940395355,
+          "workerRoundTripMs": 43.900000005960464,
+          "deliveryMs": 0.5999999940395355
+        },
+        {
+          "latencyMs": 39.099999994039536,
+          "inferenceMs": 36.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.699999988079071,
+          "workerRoundTripMs": 37.400000005960464,
+          "deliveryMs": 1.0999999940395355
+        },
+        {
+          "latencyMs": 31.200000017881393,
+          "inferenceMs": 28.5,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.2000000178813934,
+          "workerRoundTripMs": 29,
+          "deliveryMs": 0.5
+        },
+        {
+          "latencyMs": 64.80000001192093,
+          "inferenceMs": 56.5,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 7.200000017881393,
+          "workerRoundTripMs": 57.5,
+          "deliveryMs": 1
+        },
+        {
+          "latencyMs": 49.5,
+          "inferenceMs": 46.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.399999976158142,
+          "workerRoundTripMs": 47.10000002384186,
+          "deliveryMs": 0.800000011920929
+        },
+        {
+          "latencyMs": 26,
+          "inferenceMs": 24.799999982118607,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 25.400000005960464,
+          "deliveryMs": 0.6000000238418579
+        },
+        {
+          "latencyMs": 34.30000001192093,
+          "inferenceMs": 33.20000001788139,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.6000000238418579,
+          "workerRoundTripMs": 33.69999998807907,
+          "deliveryMs": 0.4999999701976776
+        },
+        {
+          "latencyMs": 56.19999998807907,
+          "inferenceMs": 50.60000002384186,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.9000000059604645,
+          "workerRoundTripMs": 53.19999998807907,
+          "deliveryMs": 2.599999964237213
+        },
+        {
+          "latencyMs": 36.900000005960464,
+          "inferenceMs": 35,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.5999999940395355,
+          "workerRoundTripMs": 35.30000001192093,
+          "deliveryMs": 0.30000001192092896
+        },
+        {
+          "latencyMs": 30.30000001192093,
+          "inferenceMs": 27.900000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.9000000059604645,
+          "workerRoundTripMs": 28.400000005960464,
+          "deliveryMs": 0.5
+        },
+        {
+          "latencyMs": 35.79999998211861,
+          "inferenceMs": 31.700000017881393,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.9000000059604645,
+          "workerRoundTripMs": 33.89999997615814,
+          "deliveryMs": 2.1999999582767487
+        },
+        {
+          "latencyMs": 49.599999994039536,
+          "inferenceMs": 48,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.9000000059604645,
+          "workerRoundTripMs": 48.599999994039536,
+          "deliveryMs": 0.5999999940395355
+        },
+        {
+          "latencyMs": 17.700000017881393,
+          "inferenceMs": 16.200000017881393,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.7000000178813934,
+          "workerRoundTripMs": 16.900000005960464,
+          "deliveryMs": 0.699999988079071
+        },
+        {
+          "latencyMs": 37.69999998807907,
+          "inferenceMs": 34.20000001788139,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.699999988079071,
+          "workerRoundTripMs": 37,
+          "deliveryMs": 2.7999999821186066
+        },
+        {
+          "latencyMs": 28.69999998807907,
+          "inferenceMs": 26.400000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2,
+          "workerRoundTripMs": 26.69999998807907,
+          "deliveryMs": 0.29999998211860657
+        },
+        {
+          "latencyMs": 51.400000005960464,
+          "inferenceMs": 50.099999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.7000000178813934,
+          "workerRoundTripMs": 50.599999994039536,
+          "deliveryMs": 0.5
+        },
+        {
+          "latencyMs": 36.099999994039536,
+          "inferenceMs": 31.099999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.5999999940395355,
+          "workerRoundTripMs": 33.5,
+          "deliveryMs": 2.4000000059604645
+        },
+        {
+          "latencyMs": 36,
+          "inferenceMs": 33.599999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.800000011920929,
+          "workerRoundTripMs": 34.19999998807907,
+          "deliveryMs": 0.5999999940395355
+        },
+        {
+          "latencyMs": 35.89999997615814,
+          "inferenceMs": 32.20000001788139,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 3.199999988079071,
+          "workerRoundTripMs": 32.69999998807907,
+          "deliveryMs": 0.4999999701976776
+        },
+        {
+          "latencyMs": 61.30000001192093,
+          "inferenceMs": 59.900000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.9000000059604645,
+          "workerRoundTripMs": 60.30000001192093,
+          "deliveryMs": 0.4000000059604645
+        },
+        {
+          "latencyMs": 46.099999994039536,
+          "inferenceMs": 45,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 45.5,
+          "deliveryMs": 0.5
+        },
+        {
+          "latencyMs": 28.299999982118607,
+          "inferenceMs": 26.5,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.9000000059604645,
+          "workerRoundTripMs": 27.299999982118607,
+          "deliveryMs": 0.7999999821186066
+        },
+        {
+          "latencyMs": 35.599999994039536,
+          "inferenceMs": 34.70000001788139,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5999999940395355,
+          "workerRoundTripMs": 35,
+          "deliveryMs": 0.29999998211860657
+        },
+        {
+          "latencyMs": 55.19999998807907,
+          "inferenceMs": 50.900000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 3.100000023841858,
+          "workerRoundTripMs": 51.79999998211861,
+          "deliveryMs": 0.8999999761581421
+        },
+        {
+          "latencyMs": 37.5,
+          "inferenceMs": 34.599999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 2.300000011920929,
+          "workerRoundTripMs": 35.099999994039536,
+          "deliveryMs": 0.5
+        },
+        {
+          "latencyMs": 28.30000001192093,
+          "inferenceMs": 26.599999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.300000011920929,
+          "workerRoundTripMs": 27,
+          "deliveryMs": 0.4000000059604645
+        },
+        {
+          "latencyMs": 30.900000005960464,
+          "inferenceMs": 28.799999982118607,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.5999999940395355,
+          "workerRoundTripMs": 29.30000001192093,
+          "deliveryMs": 0.5000000298023224
+        },
+        {
+          "latencyMs": 66.59999999403954,
+          "inferenceMs": 61.19999998807907,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 4.4000000059604645,
+          "workerRoundTripMs": 62.099999994039536,
+          "deliveryMs": 0.9000000059604645
+        },
+        {
+          "latencyMs": 35.099999994039536,
+          "inferenceMs": 33.599999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.800000011920929,
+          "workerRoundTripMs": 34.29999998211861,
+          "deliveryMs": 0.699999988079071
+        },
+        {
+          "latencyMs": 29.299999982118607,
+          "inferenceMs": 27.700000017881393,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1,
+          "workerRoundTripMs": 28.299999982118607,
+          "deliveryMs": 0.5999999642372131
+        },
+        {
+          "latencyMs": 33.79999998211861,
+          "inferenceMs": 32.80000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.3999999761581421,
+          "workerRoundTripMs": 33.400000005960464,
+          "deliveryMs": 0.5999999940395355
+        },
+        {
+          "latencyMs": 55.599999994039536,
+          "inferenceMs": 54.30000001192093,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.7000000178813934,
+          "workerRoundTripMs": 54.69999998807907,
+          "deliveryMs": 0.3999999761581421
+        },
+        {
+          "latencyMs": 31,
+          "inferenceMs": 30,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.6000000238418579,
+          "workerRoundTripMs": 30.399999976158142,
+          "deliveryMs": 0.3999999761581421
+        },
+        {
+          "latencyMs": 42.900000005960464,
+          "inferenceMs": 41.599999994039536,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 0.5,
+          "workerRoundTripMs": 42.30000001192093,
+          "deliveryMs": 0.7000000178813934
+        },
+        {
+          "latencyMs": 26.400000005960464,
+          "inferenceMs": 24.400000005960464,
+          "detected": true,
+          "stale": false,
+          "bitmapMs": 1.5,
+          "workerRoundTripMs": 24.900000005960464,
+          "deliveryMs": 0.5
+        }
+      ],
+      "visibility": "visible",
+      "focused": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "sampledAtUtc": "2026-10-26T10:28:54.3718554+00:00",
+  "totalCpuPercent": 39,
+  "gpu": [
+    {
+      "Name": "pid_4508_luid_0x00000000_0x00010773_phys_0_eng_0_engtype_3D",
+      "UtilizationPercentage": 7
+    }
+  ]
+}
